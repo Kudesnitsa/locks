@@ -20,28 +20,20 @@
 
 .ff-OS-semibold() {
   font-family: "Open Sans", sans-serif;
-  color: @text;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.ff-OS-semibold() {
-  font-family: "Open Sans", sans-serif;
-  color: @text;
   font-weight: 600;
   font-style: normal;
 }
 
 .ff-OS-italic() {
   font-family: "Open Sans", sans-serif;
-  color: @text;
+
   font-weight: 400;
   font-style: italic;
 }
 
 .ff-OS-bold() {
   font-family: "Open Sans", sans-serif;
-  color: @text;
+
   font-weight: 700;
   font-style: normal;
 }
@@ -127,6 +119,7 @@ a, button {
 .sub-head a {
   color: white;
   padding: 20px 0;
+  margin-right: 20px;
 }
 
 .sub-head a span {
@@ -176,7 +169,7 @@ a, button {
 .head {
   background: @mainColor;
   padding: 20px 0;
-  border-bottom:1px solid #2f3641 ;
+  border-bottom: 1px solid #2f3641;
 }
 
 .head .logo {
@@ -184,10 +177,11 @@ a, button {
   float: left;
   margin-right: 20px;
 }
-.head .main_menu{
+
+.head .main_menu {
   background: @mainColor;
   padding: 20px 0;
-  border-bottom:1px solid #2f3641 ;
+  border-bottom: 1px solid #2f3641;
 }
 
 .head img {
@@ -231,6 +225,7 @@ a, button {
 .search input {
   width: 80%;
   height: 100%;
+  padding: 0 20px;
   float: left;
   border: none;
 }
@@ -264,11 +259,23 @@ a, button {
   float: left;
 
 }
-.head .car a{
+
+.head .car a {
   width: 300px;
-  color:white;
+  color: white;
   display: inline-block;
   margin: 0 50px;
+}
+
+.head .car .count {
+  background: @subColor;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  margin-left: -15px;
+  display: inline-block;
 }
 
 .head .car:before {
@@ -280,14 +287,51 @@ a, button {
   background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDUxMCA1MTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMCA1MTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0ic2hvcHBpbmctY2FydCI+CgkJPHBhdGggZD0iTTE1Myw0MDhjLTI4LjA1LDAtNTEsMjIuOTUtNTEsNTFzMjIuOTUsNTEsNTEsNTFzNTEtMjIuOTUsNTEtNTFTMTgxLjA1LDQwOCwxNTMsNDA4eiBNMCwwdjUxaDUxbDkxLjgsMTkzLjhMMTA3LjEsMzA2ICAgIGMtMi41NSw3LjY1LTUuMSwxNy44NS01LjEsMjUuNWMwLDI4LjA1LDIyLjk1LDUxLDUxLDUxaDMwNnYtNTFIMTYzLjJjLTIuNTUsMC01LjEtMi41NS01LjEtNS4xdi0yLjU1MWwyMi45NS00My4zNWgxODguNyAgICBjMjAuNCwwLDM1LjctMTAuMiw0My4zNS0yNS41TDUwNC45LDg5LjI1YzUuMS01LjEsNS4xLTcuNjUsNS4xLTEyLjc1YzAtMTUuMy0xMC4yLTI1LjUtMjUuNS0yNS41SDEwNy4xTDg0LjE1LDBIMHogTTQwOCw0MDggICAgYy0yOC4wNSwwLTUxLDIyLjk1LTUxLDUxczIyLjk1LDUxLDUxLDUxczUxLTIyLjk1LDUxLTUxUzQzNi4wNSw0MDgsNDA4LDQwOHoiIGZpbGw9IiNGRkZGRkYiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K) no-repeat;
   background-size: cover;
 }
-.head .car .pris{
+
+.head .car .pris {
   display: inline-block;
   color: rgba(255, 255, 255, 0.62);
 }
+
 .head .car .pris:before {
   content: ", ";
   color: white;
 }
+.main_menu{
+
+  background: @mainColor;
+}
+.main_menu li{
+  display: inline-block;
+  padding: 20px;
+}
+.main_menu li a{
+  color: white;
+  .ff-OS-semibold();
+  text-transform: uppercase;
+  font-size: 15px;
+
+
+}
+
+.main_menu .action{
+  width: 25%;
+  box-sizing: border-box;
+  background: @subColor;
+  border-radius: 5px 5px 0 0;
+}
+.main_menu .count{
+  color: @subColor;
+  .ff-OS-semibold();
+}
+.main_menu .count:before{
+  content: "(";
+}
+.main_menu .count:after{
+  content: ")";
+}
+
+
 
 /*main slider block***************************************************************/
 .main_slider_block {
@@ -298,6 +342,7 @@ a, button {
   width: 25%;
   background-color: white;
   display: inline-block;
+  box-sizing: border-box;
   float: left;
   padding-left: 20px;
 }
@@ -322,7 +367,7 @@ a, button {
 }
 
 .main_left_menu li:last-child {
-  border: 0px;
+  border: 0;
 }
 
 .main_left_menu li:last-child a {

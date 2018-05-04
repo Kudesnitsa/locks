@@ -76,6 +76,7 @@ button {
 .sub-head a {
   color: white;
   padding: 20px 0;
+  margin-right: 20px;
 }
 .sub-head a span {
   color: rgba(255, 255, 255, 0.7);
@@ -117,7 +118,7 @@ button {
 .head {
   background: #20252d;
   padding: 20px 0;
-  border-bottom: 1px solid #2f3641 ;
+  border-bottom: 1px solid #2f3641;
 }
 .head .logo {
   width: 20%;
@@ -127,7 +128,7 @@ button {
 .head .main_menu {
   background: #20252d;
   padding: 20px 0;
-  border-bottom: 1px solid #2f3641 ;
+  border-bottom: 1px solid #2f3641;
 }
 .head img {
   width: 100%;
@@ -166,6 +167,7 @@ button {
 .search input {
   width: 80%;
   height: 100%;
+  padding: 0 20px;
   float: left;
   border: none;
 }
@@ -201,6 +203,16 @@ button {
   display: inline-block;
   margin: 0 50px;
 }
+.head .car .count {
+  background: #ea3a2d;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  margin-left: -15px;
+  display: inline-block;
+}
 .head .car:before {
   content: "";
   height: 40px;
@@ -218,6 +230,40 @@ button {
   content: ", ";
   color: white;
 }
+.main_menu {
+  background: #20252d;
+}
+.main_menu li {
+  display: inline-block;
+  padding: 20px;
+}
+.main_menu li a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.main_menu .action {
+  width: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #ea3a2d;
+  border-radius: 5px 5px 0 0;
+}
+.main_menu .count {
+  color: #ea3a2d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.main_menu .count:before {
+  content: "(";
+}
+.main_menu .count:after {
+  content: ")";
+}
 /*main slider block***************************************************************/
 .main_slider_block {
   background-color: #f7f7f7;
@@ -226,6 +272,8 @@ button {
   width: 25%;
   background-color: white;
   display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   float: left;
   padding-left: 20px;
 }
@@ -247,7 +295,7 @@ button {
   margin-right: 20px;
 }
 .main_left_menu li:last-child {
-  border: 0px;
+  border: 0;
 }
 .main_left_menu li:last-child a {
   font-style: italic;
