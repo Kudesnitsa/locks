@@ -48,7 +48,7 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  max-width: 1205px;
+  max-width: 1200px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -84,11 +84,16 @@ input:focus, button:focus {
 
 .btn.main_btn {
   background: @subColor;
+  color: white;
+  padding: 0 10px;
 }
 
 .btn.sub_btn {
   border: 2px solid @subColor;
+  color:@subColor ;
   background: transparent;
+  padding: 20px 10px;
+  border-radius: 2px ;
 }
 
 h1, h2 {
@@ -111,18 +116,18 @@ a, button {
 }
 
 //head
-.sub-head {
+.sub_head {
   background: #2f3641;
   padding: 20px 0;
 }
 
-.sub-head a {
+.sub_head a {
   color: white;
-  padding: 20px 0;
+
   margin-right: 20px;
 }
 
-.sub-head a span {
+.sub_head a span {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -139,7 +144,7 @@ a, button {
   content: ":";
 }
 
-.sub-head .phone:before {
+.sub_head .phone:before {
   content: "";
   display: inline-block;
   width: 10px;
@@ -148,13 +153,13 @@ a, button {
   background-size: cover;
 }
 
-.sub-head .wrap {
+.sub_head .wrap {
   position: relative;
 }
 
 .my_account {
   float: right;
-  margin: -20px 0 0;
+
 }
 
 .my_account:before {
@@ -261,10 +266,11 @@ a, button {
 }
 
 .head .car a {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   color: white;
   display: inline-block;
-  margin: 0 50px;
+  padding: 0 50px;
 }
 
 .head .car .count {
@@ -448,4 +454,50 @@ a, button {
   padding: 10px;
   color: white;
 }
+/*categories_block *****************************/
+.categories{
+  margin: 0 -12.5px;
+}
+.categories .item{
 
+  width: 25%;
+  float: left;
+  padding: 12.5px;
+  box-sizing: border-box;
+}
+.categories .categ {
+  position: relative;
+  background: @mainSliderBlock;
+  transition: 0.3s  ease;
+  border:1px solid transparent;
+}
+.categories .categ:hover{
+  border:1px solid #ced0dc;
+}
+
+.categories .categ img{
+  display: block;
+  width: 100%;
+}
+
+.categories .categ .btn{
+  visibility: hidden;
+  opacity: 0;
+}
+.categories .categ:hover .btn{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s  ease;
+}
+.categories .item .info{
+  width: 60%;
+  position:absolute;
+  left: 0;
+  top:0;
+  padding: 20px;
+}
+.categories .item .title{
+  font-size: 18px;
+  margin: 0 auto 20px;
+  .ff-OS-semibold();
+}
