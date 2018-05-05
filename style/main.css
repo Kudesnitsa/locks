@@ -40,22 +40,21 @@ input:focus,
 button:focus {
   outline: none;
 }
-.btn {
+.dbtn {
   display: inline-block;
-  height: 35px;
-  line-height: 35px;
 }
-.btn.main_btn {
+.dbtn.main_dbtn {
   background: #ea3a2d;
   color: white;
-  padding: 0 10px;
+  padding: 10px 15px;
+  border-radius: 3px;
 }
-.btn.sub_btn {
+.dbtn.sub_dbtn {
   border: 2px solid #ea3a2d;
   color: #ea3a2d;
   background: transparent;
-  padding: 10px 40px ;
-  border-radius: 5px ;
+  padding: 15px 40px;
+  border-radius: 5px;
 }
 h1,
 h2 {
@@ -168,21 +167,26 @@ button {
   float: left;
 }
 .search input {
-  width: 80%;
+  width: 70%;
   height: 100%;
   padding: 0 20px;
   float: left;
   border: none;
+  border-radius: 2px 0 0 2px;
 }
-.search .btn {
+.search .dbtn {
   width: 20%;
   float: left;
   height: 100%;
+  padding: 0 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0 2px 2px 0;
 }
-.search .main_btn {
+.search .main_dbtn {
   position: relative;
 }
-.search .main_btn:after {
+.search .main_dbtn:after {
   content: "";
   width: 30px;
   height: 30px;
@@ -196,7 +200,7 @@ button {
   background-size: cover;
 }
 .head .car {
-  width: 10%;
+  width: 15%;
   height: 50px;
   float: left;
 }
@@ -204,8 +208,8 @@ button {
   width: 100%;
   max-width: 300px;
   color: white;
-  display: inline-block;
-  padding: 0 50px;
+  display: block;
+  padding-left: 50px;
 }
 .head .car .count {
   background: #ea3a2d;
@@ -363,7 +367,7 @@ button {
 .banner img {
   width: 50%;
 }
-.banner_btn {
+.banner_dbtn {
   display: inline-block;
   background-color: #ea3a2d;
   border: none;
@@ -373,7 +377,7 @@ button {
 }
 /*categories_block *****************************/
 .categories {
-  margin: 0 -12.5px;
+  margin: 12.5px -12.5px;
 }
 .categories .item {
   width: 25%;
@@ -385,8 +389,8 @@ button {
 .categories .categ {
   position: relative;
   background: #f7f7f7;
-  -webkit-transition: 0.3s  ease;
-  transition: 0.3s  ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   border: 1px solid transparent;
 }
 .categories .categ:hover {
@@ -396,15 +400,15 @@ button {
   display: block;
   width: 100%;
 }
-.categories .categ .btn {
+.categories .categ .dbtn {
   visibility: hidden;
   opacity: 0;
 }
-.categories .categ:hover .btn {
+.categories .categ:hover .dbtn {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: 0.3s  ease;
-  transition: 0.3s  ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .categories .item .info {
   width: 60%;
@@ -416,11 +420,107 @@ button {
 .categories .item .title {
   font-size: 18px;
   margin: 0 auto 20px;
+  cursor: pointer;
+}
+.categories .item .title a {
+  color: #373e4a;
+}
+.categories_block .dbtn.see_categ {
+  margin: 0 auto;
+  display: table;
+}
+/************goods******************************/
+.goods_block .tabs {
+  border-bottom: 1px solid #e5e5e5;
+}
+.goods_block .tabs .tab {
+  white-space: nowrap;
+  padding: 25px 35px;
+  text-align: center;
+  float: left;
+  cursor: pointer ;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
+  text-transform: uppercase;
 }
-.categories_block .btn.see_categ {
-  margin: 0 auto;
-  display: table;
+.goods_block .tabs .action {
+  background: #ea3a2d;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+.goods {
+  margin: 50px -15px;
+}
+.goods .item {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+.goods .item .o_goods{
+  box-shadow: 0 0 10px #cccccc;
+}
+.goods .item:hover .o_goods{
+  box-shadow: 0 0 10px #cccccc;
+}
+.goods .item:not(:nth-child(4n)):after {
+  content: "";
+  display: inline-block;
+  height: 80%;
+  position: absolute;
+  top:0;
+  right: 0;
+  border-right: 1px solid #eeeeee ;
+}
+.goods .photo img {
+  width: 100%;
+  cursor: pointer;
+}
+.goods .info {
+  padding: 15px;
+}
+.goods .info .name,
+.goods .info .article {
+  width: 100%;
+  color: #568da7;
+  text-decoration: underline;
+  font-size: 14px;
+  padding: 5px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  cursor: pointer;
+  display: block;
+}
+.goods .info .maker {
+  color: #474b52;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 25px;
+}
+.goods .info .pris{
+  width: 40%;
+  float: left;
+}
+.goods .info .dbtn{
+padding:10px 40px ;
+  float: right;
+}
+.goods .info .pris {
+  font-size: 23px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.goods .info .pris:after {
+  content: "грн.";
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #373e4a;
+  font-weight: 400;
+  font-style: normal;
 }
