@@ -54,8 +54,8 @@ button:focus {
   border: 2px solid #ea3a2d;
   color: #ea3a2d;
   background: transparent;
-  padding: 20px 10px;
-  border-radius: 2px ;
+  padding: 10px 40px ;
+  border-radius: 5px ;
 }
 h1,
 h2 {
@@ -419,4 +419,8 @@ button {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+.categories_block .btn.see_categ {
+  margin: 0 auto;
+  display: table;
 }
