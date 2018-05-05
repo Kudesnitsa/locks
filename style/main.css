@@ -427,6 +427,8 @@ button {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
+  display: inline-block;
+  background-color: #ea3a2d;
   border: none;
   float: left;
   margin: 30px 0 20px;
@@ -446,7 +448,6 @@ button {
   font-weight: 700;
   font-style: normal;
 }
-/*categories_block *****************************/
 .categories {
   margin: 12.5px -12.5px;
 }
@@ -470,6 +471,10 @@ button {
 .categories .categ img {
   display: block;
   width: 100%;
+}
+.categories .categ .dbtn {
+  visibility: hidden;
+  opacity: 0;
 }
 .categories .categ .dbtn {
   visibility: hidden;
@@ -508,7 +513,7 @@ button {
   padding: 25px 35px;
   text-align: center;
   float: left;
-  cursor: pointer ;
+  cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -520,19 +525,27 @@ button {
   border-radius: 5px 5px 0 0;
 }
 .goods {
-  margin: 0 -15px;
+  margin: 30px -15px;
+}
+.goods .photo img {
+  width: 100%;
 }
 .goods .item {
   width: 25%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 15px;
   position: relative;
 }
-.goods .item:nth-child(4n):after {
+.goods .item:not(:nth-child(4n)):after {
   content: "";
-  display: inline-block;
+  display: block;
   height: 80%;
   position: absolute;
-  border-right: 1px solid ;
+  right: 0;
+  top: 0;
+  border-right: 1px solid #eeeeee;
 }
 .goods .phone img {
   width: 100%;
@@ -544,6 +557,7 @@ button {
 .goods .info .article {
   width: 100%;
   color: #568da7;
+  display: block;
   text-decoration: underline;
   font-size: 14px;
   padding: 5px 0;
@@ -552,16 +566,20 @@ button {
   font-style: normal;
 }
 .goods .info .maker {
+  margin-bottom: 25px;
   color: #474b52;
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
-.goods .info .pris,
-.goods .info .dbtn {
+.goods .info .pris {
   width: 40%;
   float: left;
+}
+.goods .info .main_dbtn {
+  padding: 10px 20px;
+  float: right;
 }
 .goods .info .pris {
   font-size: 23px;
@@ -576,4 +594,8 @@ button {
   color: #373e4a;
   font-weight: 400;
   font-style: normal;
+}
+.goods .item:hover .o_goods {
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
 }
