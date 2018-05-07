@@ -4,6 +4,7 @@
 @textSC: #474b52;
 @nameCGoods: #568da7;
 @mainSliderBlock: #f7f7f7;
+@text_sub: #80818a;
 
 * {
   margin: 0;
@@ -112,6 +113,26 @@ ul li {
 a, button {
   cursor: pointer;
   text-decoration: none;
+}
+
+.tabs {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tabs .tab {
+  white-space: nowrap;
+  padding: 15px 35px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  .ff-OS-semibold();
+  text-transform: uppercase;
+}
+
+.tabs .action {
+  background: @subColor;
+  color: white;
+  border-radius: 5px 5px 0 0;
 }
 
 //head
@@ -595,25 +616,6 @@ a, button {
   display: table;
 }
 
-.goods_block .tabs {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.goods_block .tabs .tab {
-  white-space: nowrap;
-  padding: 25px 35px;
-  text-align: center;
-  float: left;
-  cursor: pointer;
-  .ff-OS-semibold();
-  text-transform: uppercase;
-}
-
-.goods_block .tabs .action {
-  background: @subColor;
-  color: white;
-  border-radius: 5px 5px 0 0;
-}
 
 .goods {
   margin: 30px -15px;
@@ -672,9 +674,14 @@ a, button {
   float: left;
 }
 
-.goods .info .main_dbtn {
+.goods .info .sub_dbtn {
   padding: 10px 20px;
   float: right;
+  transition: 0.3s ease;
+}
+.goods .info .sub_dbtn:hover {
+  background: @subColor;
+  color: white;
 }
 
 .goods .info .pris {
@@ -691,3 +698,100 @@ a, button {
 .goods .item:hover .o_goods {
   box-shadow: 0 0 10px #cccccc;
 }
+/***news****************************************/
+.news_block .all_news{
+  float: right;
+  text-decoration: underline;
+  padding: 15px 0;
+}
+.news {
+  margin: 0 -15px 35px;
+}
+.one_new{
+  width: 50%;
+  padding: 15px;
+  float: left;
+  box-sizing: border-box;
+}
+.one_new .img {
+  width: 50%;
+  float: left;
+  padding-right: 15px;
+  box-sizing: border-box;
+
+}
+.one_new .img img{
+  width: 100%;
+  border-radius: 5px;
+}
+.one_new .info{
+  width: 50%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.one_new .info .data{
+  color: #80818a;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.one_new .info .title{
+  .ff-OS-semibold();
+  font-size: 15px;
+  padding: 15px 0
+}
+.one_new .text{
+  font-size: 11px;
+  color: #80818a;
+}
+.one_new .more_see{
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 11px;
+  .ff-OS-semibold();
+  padding: 15px 0;
+}
+/**********seo_text**********************/
+.seo_text .title{
+ margin: 30px 0;
+  .ff-OS-semibold();
+}
+.seo_text .total_title{
+  font-size: 16px;
+  color: @text;
+  padding: 10px 0;
+}
+.seo_text .spec_title{
+  font-size: 15px;
+  color: @subColor;
+}
+.seo_text .text{
+  line-height: 24px;
+  transition: 0.5s ease-in;
+  position: static;
+  transform: translate(0,0);
+}
+.seo_text .text.hidden{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transform: translate(0,-100%);
+}
+.seo_text .more_see{
+  margin: 30px 0;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  transition-delay:0.6s;
+}
+.seo_text .more_see:after{
+  content: "Читать подробней";
+  transition: 0.6s ease-in;
+  transition-delay:0.6s;
+}
+.seo_text .more_see.hidden:after{
+  content: "Cкрити";
+  transition: 0.6s ease-in;
+  transition-delay:0.6s;
+}
+
