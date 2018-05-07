@@ -463,10 +463,10 @@ button {
   background: #f7f7f7;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  border: 1px solid transparent;
 }
 .categories .categ:hover {
-  border: 1px solid #ced0dc;
+  -webkit-box-shadow: 0 0 0 2px #ced0dc;
+          box-shadow: 0 0 0 2px #ced0dc;
 }
 .categories .categ img {
   display: block;
