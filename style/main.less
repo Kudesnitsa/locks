@@ -360,7 +360,7 @@ a, button {
 }
 
 .main_slider {
-  width: 70%;
+  width: calc(~"75% - 25px");
   box-sizing: border-box;
   float: left;
   display: inline-block;
@@ -619,9 +619,10 @@ a, button {
   margin: 30px -15px;
 }
 
-.goods .photo img{
+.goods .photo img {
   width: 100%;
 }
+
 .goods .item {
   width: 25%;
   float: left;
@@ -670,10 +671,12 @@ a, button {
   width: 40%;
   float: left;
 }
-.goods .info .main_dbtn{
+
+.goods .info .main_dbtn {
   padding: 10px 20px;
   float: right;
 }
+
 .goods .info .pris {
   font-size: 23px;
   .ff-OS-bold();
@@ -684,6 +687,7 @@ a, button {
   font-size: 14px;
   .ff();
 }
-.goods .item:hover .o_goods{
+
+.goods .item:hover .o_goods {
   box-shadow: 0 0 10px #cccccc;
 }

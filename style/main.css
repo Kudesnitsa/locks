@@ -286,7 +286,7 @@ button {
   padding-left: 20px;
 }
 .main_slider {
-  width: 70%;
+  width: calc(75% - 25px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left;
