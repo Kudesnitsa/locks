@@ -1,21 +1,10 @@
 
 jQuery(document).ready(function () {
-    jQuery('.icon_nav').on('click', function () {
-        jQuery('.menu_mob').toggleClass('mob');
-    });
-    jQuery('.select.date .sub_dbtn').click(function () {
-        var chosen = jQuery('.select.date .chosen');
-        chosen.html(jQuery(this).html());
-        jQuery(this).html(chosen.html());
+    jQuery('.seo_text .more_see').on('click', function () {
+        jQuery('.seo_text').toggleClass('hidden');
+
     });
 
-
-
-    jQuery('.select.infar .sub_dbtn').click(function () {
-        var chosen = jQuery('.select.infar .chosen');
-        chosen.html(jQuery(this).html());
-        jQuery(this).html(chosen.html());
-    });
 
 
 
