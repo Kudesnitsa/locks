@@ -650,10 +650,14 @@ button {
   font-style: normal;
   font-size: 15px;
   padding: 15px 0;
+  height: 40px;
+  overflow: hidden;
 }
 .one_new .text {
   font-size: 11px;
   color: #80818a;
+  height: 60px;
+  overflow: hidden;
 }
 .one_new .more_see {
   text-decoration: underline;
@@ -688,33 +692,94 @@ button {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-.seo_text .text.hidden {
+.seo_text.hidden .text.sub {
   visibility: hidden;
   opacity: 0;
   position: absolute;
   -webkit-transform: translate(0, -100%);
           transform: translate(0, -100%);
 }
-.seo_text .more_see {
-  margin: 30px 0;
+.seo_text.hidden .more_see {
   text-decoration: underline;
   cursor: pointer;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
+  color: #20252d;
+}
+.seo_text.hidden .more_see:after {
+  content: "Читать подробней";
 }
 .seo_text .more_see:after {
-  content: "Читать подробней";
-  -webkit-transition: 0.6s ease-in;
-  transition: 0.6s ease-in;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-.seo_text .more_see.hidden:after {
   content: "Cкрити";
-  -webkit-transition: 0.6s ease-in;
-  transition: 0.6s ease-in;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  display: block;
+  text-decoration: underline;
+  margin: 30px 0;
+}
+@media (max-width: 1440px) {
+  .one_new .text {
+    height: 30px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1024px) {
+  .categories .item {
+    width: 33.33%;
+  }
+  .goods .item {
+    width: 33.33%;
+  }
+  .goods .item:not(:nth-child(4n)):after {
+    display: none;
+  }
+  .goods .item:not(:nth-child(3n)):after {
+    content: "";
+    display: block;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 1px solid #eeeeee;
+  }
+  .one_new .info .title {
+    font-size: 11px;
+    padding: 10px 0 0 ;
+  }
+}
+@media (max-width: 768px) {
+  .categories .item {
+    width: 50%;
+    padding: 15px;
+  }
+  .goods .item {
+    width: 50%;
+  }
+  .one_new {
+    width: 100%;
+    float: none;
+  }
+  .one_new .text {
+    display: block;
+  }
+  .one_new:not(:nth-child(2n)) {
+    display: none;
+  }
+  .goods .item:not(:nth-child(3n)):after {
+    display: none;
+  }
+  .goods .item:not(:nth-child(2n)):after {
+    content: "";
+    display: block;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 1px solid #eeeeee;
+  }
+}
+@media (max-width: 500px) {
+  .one_new .text {
+    display: none;
+  }
 }

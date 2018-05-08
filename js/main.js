@@ -1,8 +1,8 @@
 
 jQuery(document).ready(function () {
     jQuery('.seo_text .more_see').on('click', function () {
-        jQuery('.text.sub').toggleClass('hidden');
-        jQuery('.seo_text .more_see').toggleClass('hidden');
+        jQuery('.seo_text').toggleClass('hidden');
+
     });
 
 
