@@ -632,13 +632,23 @@ a, button {
   display: block;
   z-index: 10;
   background: rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease;
+}
+
+.goods_block .popup.hidden {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -10;
+  height: 0;
+  width:0;
 }
 
 .popup .info_block {
   max-width: 700px;
-  max-height: 300px;
-  height: 300px;
-  width: 700px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   padding: 30px 20px;
   top: 50%;
@@ -646,17 +656,18 @@ a, button {
   border-radius: 10px;
   background: white;
   transform: translate(-50%, -50%);
+  transition: 0.5s ease;
 }
 
 .popup .info_block .close {
   float: right;
   margin: 5px;
+  cursor: pointer;
 }
 
 .popup .info_block .close:after {
   content: "";
   text-align: right;
-
   width: 20px;
   height: 20px;
   display: block;
@@ -673,12 +684,13 @@ a, button {
 .popup .goods {
   margin: 0;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content:space-between;
-  align-items:center;
+  justify-content: space-between;
+  align-items: center;
 }
-.popup .goods div{
+
+.popup .goods div {
   float: left;
   padding: 0 20px;
   box-sizing: border-box;
@@ -687,7 +699,7 @@ a, button {
 .popup .goods .del {
   width: 5%;
   padding: 0;
-
+  cursor: pointer;
 }
 
 .popup .goods .del:after {
@@ -725,6 +737,26 @@ a, button {
 
 }
 
+.popup .button_box {
+  margin: 30px 0;
+}
+
+.popup .button_box .back {
+  color: @nameCGoods;
+  float: left;
+  display: table;
+}
+
+.popup .button_box .main_dbtn {
+  float: right;
+  display: table;
+}
+
+.popup .button_box .back:before {
+  content: "\2039";
+  font-size: 20px;
+}
+
 .goods_block {
   margin-top: 30px;
 }
@@ -760,8 +792,9 @@ a, button {
 
 }
 
-.goods .info {
+.goods .info,.goods .box_pr_btn {
   padding: 15px;
+
 }
 
 .goods .info .name, .goods .info .article {
@@ -775,29 +808,28 @@ a, button {
 }
 
 .goods .info .maker {
-  margin-bottom: 25px;
   color: @textSC;
   font-size: 12px;
   .ff-OS-semibold();
 }
 
-.goods .info .pris {
-  width: 40%;
+.goods .o_goods .pris {
+  width: 50%;
   float: left;
 }
 
-.goods .info .sub_dbtn {
+.goods  .o_goods .sub_dbtn {
   padding: 10px 20px;
   float: right;
   transition: 0.3s ease;
 }
 
-.goods .info .sub_dbtn:hover {
+.goods .o_goods .sub_dbtn:hover {
   background: @subColor;
   color: white;
 }
 
-.goods .info .pris {
+.goods .o_goods .pris {
   font-size: 23px;
   .ff-OS-bold();
 }
