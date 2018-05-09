@@ -10,9 +10,12 @@ jQuery(document).ready(function () {
         jQuery('.popup .goods .pris').html(jQuery(this).parents('.o_goods').find('.pris').html());
         jQuery('.popup').toggleClass('hidden');
     });
-
     jQuery('.popup .hid_popup').on('click', function () {
         jQuery('.popup').addClass('hidden');
     });
-
+    jQuery('.popup .del').on('click', function () {
+        jQuery('.popup .title').toggle();
+        jQuery('.popup .goods').html('<h2 class="title_del">Товар удален из корзины</h2>');
+    }
+    );
 });
