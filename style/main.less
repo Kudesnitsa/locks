@@ -472,9 +472,15 @@ a, button {
   visibility: hidden;
   height: 0;
   opacity: 0;
-  background: @subColor;
   width: auto;
   margin: -5px -15px 0;
+}
+
+.mob_but_kat button {
+  width: 100%;
+  background: @subColor;
+  text-align: center;
+  border: none;
 }
 
 .mob_but_kat span {
@@ -532,7 +538,7 @@ a, button {
   background: white;
   box-shadow: 0 0 10px #999999;
   top: 0;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
@@ -540,12 +546,9 @@ a, button {
   text-decoration: none;
 }
 
-.have_sub_item:hover .sub_menu {
-  visibility: visible;
-  opacity: 1;
-}
 
-.have_sub_item a:after {
+
+.have_sub_item > a:after {
   content: "";
   width: 10px;
   height: 10px;
@@ -1128,8 +1131,15 @@ footer {
   line-height: 30px;
   padding-top: 25px;
 }
-.search_box{
+
+.search_box {
   display: none;
+}
+@media(min-width: 1024px)  {
+  .have_sub_item:hover .sub_menu {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -1141,15 +1151,17 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  .search_box{
+  .search_box {
     background: #2f3641;
     width: 100%;
     display: block;
     position: absolute;
   }
-  .search_box{
+
+  .search_box {
 
   }
+
   body {
     padding-top: 90px;
     box-sizing: border-box;
@@ -1159,7 +1171,7 @@ footer {
     position: fixed;
     width: 100%;
     z-index: 20;
-    top:0;
+    top: 0;
   }
 
   .head .wrap {
@@ -1300,16 +1312,46 @@ footer {
     border: 1px solid #ececec;
     border-radius: 5px;
     box-shadow: 0 0 8px #ececec;
-    //visibility: hidden;
-    //height: 0;
-    //opacity: 0;
-    //position: absolute;
+  }
+
+  .hid_menu {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    position: absolute;
   }
 
   .main_slider_block .mob_but_kat {
     visibility: visible;
     opacity: 1;
     height: auto;
+  }
+
+  .sub_menu {
+    box-shadow: none;
+    margin: 10px 0 0;
+    padding: 0;
+  }
+
+  .sub_menu {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    position: static;
+  }
+
+  .have_sub_item .sec_sub_menu {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+
+  .have_sub_item .sub_menu a{
+    display: none;
+  }
+
+  .have_sub_item .sec_sub_menu a{
+    display: block;
   }
 }
 
