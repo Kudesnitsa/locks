@@ -10,6 +10,13 @@ jQuery(document).ready(function () {
         jQuery('.popup .goods .pris').html(jQuery(this).parents('.o_goods').find('.pris').html());
         jQuery('.popup').toggleClass('hidden');
     });
+
+    jQuery('.tab_categ').on('click', function () {
+        jQuery('.mob_but_kat').toggleClass('hidden');
+    });
+    jQuery('.show_li').on('click', function () {
+        jQuery('.continue_menu').toggleClass('hidd_list');
+    });
     jQuery('.popup .hid_popup').on('click', function () {
         jQuery('.popup').addClass('hidden');
     });
@@ -18,4 +25,5 @@ jQuery(document).ready(function () {
         jQuery('.popup .goods').html('<h2 class="title_del">Товар удален из корзины</h2>');
     }
     );
+
 });

@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family= Open + Sans: 400,400i, 600i, 700 & amp; subset = cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="style/ion.rangeSlider.css"/>
+    <link rel="stylesheet" type="text/css" href="style/ion.rangeSlider.skinFlat.css"/>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <title>locks</title>
+</head>
+<body>
+<header>
+    <div class="sub_head">
+        <div class="wrap">
+            <a href="tel:+38 (099) 077 23 25" class="phone">
+                <span>+38 (099)</span> 077 23 25
+            </a>
+            <a href="tel:+38 (067) 077 23 25" class="phone">
+                <span>+38 (067)</span> 077 23 25
+            </a>
+            <a class="schedule" href="#">
+                <span>График работы</span> пн-пт: 09:00 - 18:00, сб-вс до 13:00
+            </a>
+            <a class="my_account" href="#">
+                Мой аккаунт
+            </a>
+        </div>
+    </div>
+    <div class="head clearfix">
+        <div class="wrap">
+            <div class="mob icon menu"></div>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo" title="logo">
+            </div>
+            <div class="callback">
+                <a href="#" class="dbtn ">
+                    <span>Обратный звонок</span>
+                </a>
+            </div>
+            <a href="#" class="car clearfix">
+                <span class="count">3</span>
+                <div><span class="lable">Корзинa</span><span class="pris">352 грн</span></div>
+            </a>
+            <div class="search clearfix">
+                <input type="search" pattern="Поиск" placeholder="Поиск" class="search_input">
+                <a href="#" class="dbtn main_dbtn"> </a>
+            </div>
+        </div>
+        <!--  <div class="search_box">
+              <a href="#" class="dbtn main_dbtn"> </a>
+              <input type="search" pattern="Поиск" placeholder="Поиск" class="search_input">
+          </div>-->
+    </div>
+    <nav class="main_menu">
+        <div class="wrap clearfix">
+            <ul>
+                <li><a href="#"> о нас</a></li>
+                <li><a href="#"> оплата и доставка</a></li>
+                <li><a href="#"> Отзывы <span class="count">20</span></a></li>
+                <li><a href="#"> НОВОСТИ</a></li>
+                <li><a href="#"> Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+<main class="page_categories">
+    <section class="main_box">
+        <div class="wrap clearfix">
+            <div class="mob_but_kat">
+                <span>Каталог продукции</span>
+
+                <ul class="main_left_menu">
+                    <li><a href="#">Доводчики</a></li>
+                    <li class="have_sub_item"><a href="#">Замки в комплекте</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">sub menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Замки врезные узкие(калиточные)</a></li>
+                    <li><a href="#">Замки гаражные</a></li>
+                    <li class="have_sub_item"><a href="#">Замки межкомнатные</a></li>
+                    <li class="have_sub_item"><a href="#">Замки на входные двери</a></li>
+                    <li class="have_sub_item"><a href="#">Замки навесные</a></li>
+                    <li><a href="#">Замки накладные</a></li>
+                    <li class="have_sub_item"><a href="#">Механизмы врезные</a></li>
+                    <li class="have_sub_item"><a href="#">Петли дверные</a></li>
+                    <li><a href="#" class="all_kateg"><b>Все категории</b></a></li>
+                </ul>
+                <ul class="main_left_menu hidd_list">
+                    <li class="have_sub_item"><a href="#">Польша (товар из Польши)</a></li>
+                    <li><a href="#">Раздвижные системы</a></li>
+                    <li><a href="#">Ручки защелка кноб</a></li>
+                    <li class="have_sub_item"><a href="#">Ручки на планке</a></li>
+                    <li class="have_sub_item"><a href="#">Ручки на розете</a></li>
+                    <li class="have_sub_item"><a href="#">Сердцевины</a></li>
+                    <li class="have_sub_item"><a href="#">Скобяные изделия</a></li>
+                    <li><a href="#">Уплотнитель</a></li>
+                    <li><a href="#">Хомуты пластиковые</a></li>
+                    <li class="have_sub_item"><a href="#">Шпингалеты и дверные аксессуары</a></li>
+                </ul>
+            </div>
+            <div class="goods_block wrap">
+                <div class="popup hidden">
+                    <div class="info_block clearfix">
+                        <div class="clearfix">
+                            <div class="title">Товар добавлен в корзину</div>
+                            <div class="close hid_popup"></div>
+                        </div>
+                        <div class="goods clearfix">
+                            <div class="del">
+
+                            </div>
+                            <div class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </div>
+                            <div class="info">
+
+                                <a class="name">
+                                    Замок врезной Фурор
+                                </a>
+                                <a class="article">MP32-H14 MCF
+                                </a>
+                                <span class="maker">
+                            Stanley
+                        </span>
+                            </div>
+                            <div class="count">
+                                <input type="number" id="count" min="0" value="1" placeholder="">
+                            </div>
+                            <div class="pris">
+                                8 156
+                            </div>
+                        </div>
+                        <div class="button_box clearfix">
+                            <a class="back hid_popup">
+                                Продолжить выбор товаров
+                            </a>
+                            <a class="dbtn main_dbtn">
+                                Оформить заказ
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="heead clearfix">
+                    <h1 class="title_goods">Замки в комплекте </h1>
+                    <div class="filter brand clearfix">
+                        <div class="lable">
+                            Фильтровать по бренду:
+                        </div>
+                        <span class="item action">Все</span>
+                        <span class="item"> Azbe </span> <span class="item">Barrera </span>
+                        <span class="item">Bas IP</span><span class="item">Barrera </span>
+                        <span class="item">Bas IP</span>
+                        <span class="item"> Azbe </span> <span class="item">Barrera </span>
+                        <span class="item">Bas IP</span>
+                        <span class="item"> Azbe </span> <span class="item">Barrera </span>
+                        <span class="item">Bas IP</span>
+                        <span class="item"> Azbe </span> <span class="item">Barrera </span>
+                        <span class="item">Bas IP</span>
+                        <span class="item"> Azbe </span> <span class="item">Barrera </span>
+                        <span class="item">Bas IP</span>
+                    </div>
+                    <div class="filter pris">
+                        <div class="lable">
+                            Фильтровать по бренду:
+                        </div>
+                        <input type="text" class="min_pris r_pris" placeholder="100" value="100">
+
+                        <div class="pris_input">
+                            <div>
+                                <input  type="text" id="range" value="" placeholder="12;45" name="range"/>
+                            </div>
+                       </div>
+                        <input type="text" class="max_pris r_pris" placeholder="1000" value="1000">
+
+
+                        <a class="dbtn main_dbtn">
+                            Применить
+                        </a>
+                    </div>
+                </div>
+                <div class="goods clearfix">
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div><!---->
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="o_goods clearfix">
+                            <a class="photo">
+                                <img src="img/goods.png" alt="goods" title="goods">
+                            </a>
+                            <div class="info clearfix">
+                                <a class="name">
+                                    Замок врезной фурор
+                                </a>
+                                <a class="article">MPasfasfas
+                                </a>
+                                <span class="maker">
+                            Sadfgaesbhfdg
+                        </span>
+                            </div>
+                            <div class="box_pr_btn clearfix">
+                                <div class="pris">8 156
+                                </div>
+                                <a class="dbtn sub_dbtn">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagina">
+                    <div class="dbtn main_dbtn arrow left b"><</div>
+                    <div class="item action">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="dbtn main_dbtn arrow right">></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seo_text hidden wrap clearfix">
+        <div class="title">
+            <h3 class="total_title">
+                Дверная фурнитура оптом
+            </h3>
+            <h4 class="spec_title">
+                Интернет–магазин «Опт Замки» - это удобно!
+            </h4>
+        </div>
+        <div class="text">
+            Купить замки оптом, в интернет-магазине, сегодня не только выгодно, но и удобно. Ведь, находясь в интернете
+            вы с легкостью имеете возможность проверить ценовую политику интересующего вами товара. Покупая замки оптом,
+            можно с лёгкостью подобрать дверные ручки, дверные механизмы, сердцевины, петли и другую сопутствующею
+            фурнитуру разных производителей. И от этого будет зависеть конечная цена дверного замка. Наша ценовая
+            политика и ассортимент позволит вам увеличить товарооборот, а если вы только открываете свой магазин мы
+            поможем выбрать ассортимент. Кроме врезных замков есть навесные замки, накладные от простых до более сложных
+            мы поможем выбрать золотую середину. Большой выбор петлей от врезных до накладных.
+            Интернет-магазин ювелирных украшений - это качество!
+        </div>
+        <div class="text sub ">
+            Когда речь заходит об ювелирных украшениях, многие в первую очередь задумываются об их высокой стоимости, но
+            наш Интернет-магазин ювелирных изделий создан для того, чтобы вы могли купить понравившееся украшения по
+            доступной цене. Исходя из отзывов наших клиентов, если сравнить цены на аналогичные ювелирные изделия в
+            нашем Интернет–магазине и других местах продаж украшений, то преимущество, без сомнения, остается за «GOLD &
+            SILVER». Нам не нужно включать в стоимость украшений дорогую аренду помещений, оплату труда большого штата
+            работников и т.п. Зато наш Интернет–магазин ювелирных украшений предлагает купить ювелирные изделия по самым
+            низким ценам в Украине: в г. Киев, Харьков, Днепропетровск, Одессу, Ивано-Франковск и др. Таким образом,
+            золото и серебро из предметов роскоши превращается в выгодное капиталовложение: качественная работа ювелиров
+            высоко ценилась во все времена.
+
+            Стильные золотые и серебряные изделия – это атрибуты хорошего вкуса, но если сравнить цены, то, несомненно,
+            ювелирные украшения из серебра будут стоить существенно ниже. Интернет–магазин ювелирных изделий из серебра
+            «GOLD&SILVER» (Украина, Киев) предлагает вашему вниманию изысканные украшения, которые будут уместны как для
+            повседневного стиля, так и для особых случаев. В каталоге нашего Интернет-магазина ювелирных изделий из
+            серебра представлены украшения лучших производителей Украины: Киев, Харьков и др.), которые славятся своими
+            качественными работами с уникальным дизайном. Кроме того, наш Интернет–магазин ювелирных изделий из серебра
+            для своих покупателей постоянно устраивает приятные акции, которые каждому дают возможность купить ювелирные
+            изделия по очень доступным ценам.
+
+            Интернет–магазин ювелирных украшений в Украине: преимущества
+
+            В каком бы городе Украины вы не находились (Киев, Харьков или любой другой), осуществляя покупку ювелирных
+            изделий в Интернет–магазине ювелирных изделий «GOLD&SILVER», вы получаете следующие неоспоримые
+            преимущества:
+            наш Интернет–магазин имеет все необходимые разрешения на торговлю ювелирными украшениями, которые
+            соответствуют законодательству Украины, поэтому покупателю гарантированно высокое качество предлагаемых
+            товаров;
+
+        </div>
+        <a class="dbtn more_see" id="seo_btn" href="#seo_btn"></a>
+    </section>
+</main>
+<footer>
+    <div class="wrap">
+    </div>
+</footer>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
+<script src="js/main.js"></script>
+<script>
+    var $range = jQuery("#range");
+    var min_pris= 100;
+    var max_pris=1000;
+
+    $range.ionRangeSlider({
+        type: "double",
+        min: min_pris,
+        max: max_pris,
+        from: 100,
+        to: 1000,
+
+        hide_min_max: true,
+        hide_from_to: true,
+        grid: false
+    });
+
+    $range.on("change", function () {
+        var $this = jQuery(this),
+            value = $this.prop("value").split(";");
+        jQuery( "input.min_pris" ).val(value[0]);
+        jQuery( "input.max_pris" ).val(value[1]);
+
+    });
+</script>
+</body>
+</html>
