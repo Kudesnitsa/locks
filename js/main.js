@@ -25,5 +25,12 @@ jQuery(document).ready(function () {
         jQuery('.popup .goods').html('<h2 class="title_del">Товар удален из корзины</h2>');
     }
     );
+    jQuery('.mob_but_kat button').on('click', function () {
+        jQuery('.main_left_menu').toggleClass('hid_menu');
 
+    });
+    jQuery('.main_left_menu .have_sub_item').on('click', function () {
+        jQuery('.have_sub_item .sub_menu').toggleClass('sec_sub_menu');
+
+    });
 });
