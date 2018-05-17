@@ -1164,6 +1164,36 @@ footer {
 .pagina .item.action {
   color: #ea3a2d;
 }
+.page_goods .slider {
+  width: 50%;
+  float: left;
+}
+.page_goods .slider img {
+  width: 100%;
+}
+.page_goods .good_card {
+  width: 50%;
+  float: left;
+  padding-left: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page_goods .good {
+  padding: 25px 0 0 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -55px;
+  width: 75%;
+  float: right;
+}
+.page_goods .good_card .head {
+  width: 90%;
+  float: left;
+}
+.page_goods .arrows_goods {
+  width: 10%;
+  float: left;
+}
 @media (max-width: 1440px) {
   .one_new .text {
     height: 30px;
