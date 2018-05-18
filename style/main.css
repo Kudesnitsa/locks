@@ -343,8 +343,8 @@ button {
   position: absolute;
 }
 .continue_menu {
-  -webkit-box-shadow: 0 8px  10px #eeeeee;
-          box-shadow: 0 8px  10px #eeeeee;
+  -webkit-box-shadow: 0 8px 10px #eeeeee;
+          box-shadow: 0 8px 10px #eeeeee;
   position: absolute;
   padding: 0 20px 20px;
   top: 0;
@@ -425,8 +425,8 @@ button {
   -webkit-transform: translate(0, -56px);
           transform: translate(0, -56px);
   border-radius: 5px 5px 0 0;
-  -webkit-transition: 0.3s ease ;
-  transition: 0.3s ease ;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .mob_but_kat .tab_categ {
   font-family: "Open Sans", sans-serif;
@@ -438,7 +438,7 @@ button {
   font-size: 15px;
   padding: 10px;
   line-height: 36px;
-  border-radius: 5px 5px 0 0 ;
+  border-radius: 5px 5px 0 0;
   color: white;
   z-index: 5;
   background: #ea3a2d;
@@ -1078,8 +1078,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap ;
-      flex-wrap: wrap ;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .filter.pris {
   display: -webkit-box;
@@ -1088,8 +1088,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap ;
-      flex-wrap: wrap ;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .page_categories .filter .item {
   cursor: pointer;
@@ -1157,7 +1157,7 @@ footer {
 }
 .pagina .item {
   font-size: 25px;
-  padding: 0  20px;
+  padding: 0 20px;
   display: inline-block;
   float: left;
 }
@@ -1193,6 +1193,50 @@ footer {
 .page_goods .arrows_goods {
   width: 10%;
   float: left;
+}
+.page_goods .main_info .name,
+.page_goods .main_info .article {
+  color: #568da7;
+  font-size: 24px;
+  margin: 0;
+}
+.page_goods .main_info .article {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.page_goods .main_info .brend {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+}
+.page_goods .main_info .pris {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 44px;
+}
+.page_goods .main_info .pris:after {
+  content: "грн.";
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #373e4a;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+.page_goods .total_info .item {
+  font-size: 16px;
+  color: #2d2d2d;
+  line-height: 30px;
+}
+.page_goods .total_info .pris_partner:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background: url("");
 }
 .page_goods .text_good {
   font-family: "Open Sans", sans-serif;
@@ -1244,13 +1288,17 @@ footer {
   }
 }
 @media (max-width: 1024px) {
+  .page_goods .good {
+    width: 100%;
+    padding: 30px 0;
+  }
   .continue_menu {
     visibility: visible;
     opacity: 1;
     position: relative;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 0 ;
+    padding: 0;
     top: 0;
     left: -10px;
     background: white;
