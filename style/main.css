@@ -1420,6 +1420,9 @@ footer {
   .goods .item {
     width: 33.33%;
   }
+  .goods_block .goods .item:nth-child(4n) {
+    display: none;
+  }
   .goods .item:not(:nth-child(4n)):after {
     display: none;
   }
@@ -1513,6 +1516,9 @@ footer {
   }
   .goods .item {
     width: 50%;
+  }
+  .goods_block .goods .item:nth-child(3n) {
+    display: none;
   }
   .one_new {
     width: 100%;
