@@ -1309,9 +1309,10 @@ footer {
   float: right;
 }
 
-.page_goods .good_card .head {
+.page_goods .head_good{
   width: 90%;
   float: left;
+  position: relative;
 }
 
 .page_goods .arrows_goods {
@@ -1324,6 +1325,10 @@ footer {
    float: left;
  }
 .page_goods .head_good .arrows{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0,-50%);
   width:20%;
   float: left;
 }
@@ -1366,7 +1371,7 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
 .page_goods  .pris:after {
   content: "грн.";
   .ff();
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .page_goods .total_info .item {
@@ -1473,7 +1478,9 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
 }
 .page_goods .count{
   width: 40%;
+  box-sizing: border-box;
   float: left;
+  margin: 10px 0;
   padding: 10px;
   border: 1px solid #dedede;
   border-radius: 10px;
@@ -1592,7 +1599,7 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
     width: auto;
     transform: none;
     border-radius: 0;
-    margin:0 0 50px 0;
+    margin:0 0 90px 0;
   }
 
   .mob_but_kat .tab_categ {
@@ -1604,9 +1611,7 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
     display: inline-block;
   }
 
-  .main_left_menu {
-    border-radius: 0 0 5px 5px;
-  }
+
 
   .page_categories .goods_block {
     width: 100%;
@@ -1781,13 +1786,7 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
     padding: 0;
   }
 
-  .main_left_menu {
-    float: none;
-    width: 100%;
-    border: 1px solid #ececec;
-    border-radius: 5px;
-    box-shadow: 0 0 8px #ececec;
-  }
+
 
   .main_slider_block .mob_but_kat {
     width: auto;
@@ -1917,6 +1916,9 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
 }
 
 @media (max-width: 500px) {
+  .page_goods .order_call .lable,.page_goods .input_tel,.page_goods .count,.page_goods .buy .main_dbtn{
+    width: 100%;
+  }
 
   body {
     padding-top: 45px;
