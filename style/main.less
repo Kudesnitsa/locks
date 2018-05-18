@@ -1702,9 +1702,12 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
     width: 33.33%;
   }
 
+  .goods_block .goods .item:nth-child(4n) {
+    display: none;
+  }
+
   .goods .item:not(:nth-child(4n)):after {
     display: none;
-
   }
 
   .goods .item:not(:nth-child(3n)):after {
@@ -1814,6 +1817,10 @@ background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZ
 
   .goods .item {
     width: 50%;
+  }
+
+  .goods_block .goods .item:nth-child(3n) {
+    display: none;
   }
 
   .one_new {
