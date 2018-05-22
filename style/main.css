@@ -1187,9 +1187,10 @@ footer {
   float: right;
 }
 .page_goods .head_good {
-  width: 90%;
-  float: left;
   position: relative;
+}
+.page_goods .goods_block .goods {
+  margin-top: 50px;
 }
 .page_goods .arrows_goods {
   width: 10%;
@@ -1304,7 +1305,7 @@ footer {
   width: 100%;
 }
 .page_goods .total_info {
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 .page_goods .order_call .lable {
   width: 45%;
@@ -1359,7 +1360,6 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left;
-  margin: 10px 0;
   padding: 10px;
   border: 1px solid #dedede;
   border-radius: 10px;
@@ -1737,6 +1737,9 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  .page_goods .count {
+    margin: 10px 0;
+  }
   .page_goods .order_call .lable,
   .page_goods .input_tel,
   .page_goods .count,
