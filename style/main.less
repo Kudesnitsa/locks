@@ -92,6 +92,7 @@ input:focus, button:focus {
 
 .dbtn {
   display: inline-block;
+  border: none;
 }
 
 .dbtn.main_dbtn {
@@ -368,8 +369,13 @@ a, button {
 }
 
 .head .car .pris {
+  font-size: 18px;
   padding: 5px 0;
   display: block;
+  color: rgba(255, 255, 255, 0.62);
+}
+.head .car .pris:after {
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.62);
 }
 
@@ -1215,11 +1221,10 @@ footer {
 
 .filter.brand {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.filter.pris {
+.filter.pris_block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1583,11 +1588,6 @@ footer {
   border-bottom: 2px solid #efefef;
   color: #777777;
 }
-.page_contacts .info_cont {
-  display: inline-block;
-  float: left;
-  width: 75%;
-}
 
 .page_contacts .title span {
   .ff-OS-bold();
@@ -1865,7 +1865,12 @@ div.product {
   color: #ffffff;
   padding: 15px;
 }
-
+.page_news .one_new{
+  width: 100%;
+}
+.page_news .one_new .text{
+  height: 100px;
+}
 
 
 @media (max-width: 1440px) {
@@ -2145,6 +2150,12 @@ div.product {
 }
 
 @media (max-width: 768px) {
+  .one_new .more_see, .one_new .info{
+    padding: 0;
+  }
+  .page_news .one_new .text {
+    height: 30px;
+  }
   .one_new .info .title {
     font-size: 15px;
   }
@@ -2264,6 +2275,9 @@ div.product {
 }
 
 @media (max-width: 500px) {
+  .cart_item{
+    height: 200px;
+  }
   .cart_del_btn{
     width: 0;
   }
@@ -2277,9 +2291,10 @@ div.product {
     float: left;
     height: auto;
     width: 50%;
+    padding: 5px;
   }
   .cart_item .item_photo{
-    width: 40%;
+    width: 45%;
   }
   .quantity .spacer{
     width: 130px;
@@ -2396,6 +2411,7 @@ div.product {
 
   .page_contacts .a_e_p, .page_contacts .write_us {
     width: 100%;
+    padding: 0;
   }
 
   .page_contacts .dbtn {
