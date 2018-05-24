@@ -374,6 +374,7 @@ a, button {
   display: block;
   color: rgba(255, 255, 255, 0.62);
 }
+
 .head .car .pris:after {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.62);
@@ -426,8 +427,6 @@ a, button {
 .main_menu .count:after {
   content: ")";
 }
-
-
 
 /*main slider block***************************************************************/
 .main_slider_block {
@@ -953,9 +952,6 @@ a, button {
   background: @subColor;
   color: white;
 }
-
-
-
 
 .goods .item:hover .o_goods {
   box-shadow: 0 0 10px #cccccc;
@@ -1661,6 +1657,7 @@ footer {
 .page_contacts iframe {
   width: 100%;
 }
+
 .btn_wrap {
   display: table;
   margin: 20px auto;
@@ -1671,32 +1668,36 @@ footer {
 .card .header_one {
   text-align: left;
 }
- .page_card .title_page{
-   margin: 0;
- }
+
+.page_card .title_page {
+  margin: 0;
+}
+
 #removeproduct {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   color: #8e8e8e;
 }
-.desc_self .coll_name_sub{
+
+.desc_self .coll_name_sub {
   color: @nameCGoods;
   .ff-OS-semibold();
   font-size: 17px;
   text-transform: uppercase;
 }
-.desc_self .opg-link{
+
+.desc_self .opg-link {
   color: @nameCGoods;
   .ff-OS-bold();
   font-size: 17px;
 
 }
-.cart_form_left input::placeholder, .cart_form_right select::placeholder, .cart_form_right textarea::placeholder{
-  color:#6f6f6f;
+
+.cart_form_left input::placeholder, .cart_form_right select::placeholder, .cart_form_right textarea::placeholder {
+  color: #6f6f6f;
   font-size: 15px;
 }
-
 
 .cart_item .item_photo a img {
   display: block;
@@ -1713,26 +1714,30 @@ footer {
   float: left;
   height: 100%;
 }
-.cart_total_block{
+
+.cart_total_block {
   width: 100%;
   padding: 30px 0;
 }
-.cart_total_price_text{
+
+.cart_total_price_text {
   float: left;
   color: @text_sub;
   font-size: 25px;
   vertical-align: middle;
 }
-.cart_total_price{
+
+.cart_total_price {
   float: right;
   text-align: right;
   color: @subColor;
 }
-.cart_total_price:after{
+
+.cart_total_price:after {
   color: @subColor;
 }
 
-.desc_self, .amount_controller, .spacer  {
+.desc_self, .amount_controller, .spacer {
   width: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -1778,11 +1783,13 @@ footer {
   height: 100%;
   color: #757575;
 }
-.quantity .spacer{
-  border:  1px solid #eeeeee;
+
+.quantity .spacer {
+  border: 1px solid #eeeeee;
   border-radius: 10px;
   display: table;
 }
+
 .price_cell {
 
   min-width: 45px;
@@ -1803,6 +1810,7 @@ footer {
   width: 25%;
   float: right;
 }
+
 div.product {
   float: none !important;
 }
@@ -1829,35 +1837,41 @@ div.product {
 .price_cell {
   text-align: right;
 }
-.cart_form_left{
-   width: 50%;
-  padding-right:35px;
-   box-sizing: border-box;
-   float: left;
- }
+
+.cart_form_left {
+  width: 50%;
+  padding-right: 35px;
+  box-sizing: border-box;
+  float: left;
+}
+
 .cart_form_left input,
 .cart_form_right select,
-.cart_form_right textarea{
+.cart_form_right textarea {
   width: 100%;
   border: 1px solid #d3d3d3;
-  border-radius:10px;
+  border-radius: 10px;
   margin: 10px 0;
-  padding:15px ;
+  padding: 15px;
   box-sizing: border-box;
 
 }
+
 .clear {
   clear: both;
 }
-.cart_form_right textarea{
+
+.cart_form_right textarea {
   height: 125px;
 }
-.cart_form_right{
+
+.cart_form_right {
   width: 50%;
-  padding-left:35px;
+  padding-left: 35px;
   box-sizing: border-box;
   float: right;
 }
+
 .in_stock_btn.car_form_btn {
   display: table;
   margin: 10px auto 20px;
@@ -1865,13 +1879,48 @@ div.product {
   color: #ffffff;
   padding: 15px;
 }
-.page_news .one_new{
+
+.page_news .one_new {
   width: 100%;
 }
-.page_news .one_new .text{
+
+.page_news .one_new .text {
   height: 100px;
 }
 
+.page_account .main_left_menu {
+  display: none;
+}
+
+.page_account .wrap_main_box {
+  width: 100%;
+  padding: 0;
+}
+
+.page_account .title_page {
+  border: none;
+}
+
+.page_account .head_table {
+  background: #f3f2f2;
+}
+
+.page_account .row div {
+  text-align: center;
+  width: 20%;
+  float: left;
+}
+
+.page_account .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f3f2f2;
+}
+.page_account .show_more{
+  margin: 50px 0;
+}
 
 @media (max-width: 1440px) {
   .one_new .text {
@@ -1882,11 +1931,12 @@ div.product {
 }
 
 @media (max-width: 1024px) {
-  .wrap_main_box{
+  .wrap_main_box {
     width: 100%;
     padding: 0;
     margin: 0;
   }
+
   .page_goods .good_card, .page_goods .head_good, .page_goods .slider {
     width: 100%;
   }
@@ -2150,12 +2200,14 @@ div.product {
 }
 
 @media (max-width: 768px) {
-  .one_new .more_see, .one_new .info{
+  .one_new .more_see, .one_new .info {
     padding: 0;
   }
+
   .page_news .one_new .text {
     height: 30px;
   }
+
   .one_new .info .title {
     font-size: 15px;
   }
@@ -2275,34 +2327,41 @@ div.product {
 }
 
 @media (max-width: 500px) {
-  .cart_item{
+  .cart_item {
     height: 200px;
   }
-  .cart_del_btn{
+
+  .cart_del_btn {
     width: 0;
   }
+
   #removeproduct {
     position: absolute;
     top: 0;
     right: 0;
   }
-  .cart_item .item_desc,.cart_item .amount_ctrl_block,.cart_item .price_cell{
+
+  .cart_item .item_desc, .cart_item .amount_ctrl_block, .cart_item .price_cell {
     display: block;
     float: left;
     height: auto;
     width: 50%;
     padding: 5px;
   }
-  .cart_item .item_photo{
+
+  .cart_item .item_photo {
     width: 45%;
   }
-  .quantity .spacer{
+
+  .quantity .spacer {
     width: 130px;
   }
-  .cart_form_left,.cart_form_right{
+
+  .cart_form_left, .cart_form_right {
     width: 100%;
     padding: 0;
   }
+
   .page_goods .count {
     margin: 10px 0;
   }

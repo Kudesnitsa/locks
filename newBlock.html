@@ -209,29 +209,6 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/ion.rangeSlider.js"></script>
 <script src="js/main.js"></script>
-<script>
-    var $range = jQuery("#range");
-    var min_pris = 100;
-    var max_pris = 1000;
 
-    $range.ionRangeSlider({
-        type: "double",
-        min: min_pris,
-        max: max_pris,
-        from: 100,
-        to: 1000,
-
-        hide_min_max: true,
-        hide_from_to: true,
-        grid: false
-    });
-
-    $range.on("change", function () {
-        var $this = jQuery(this),
-            value = $this.prop("value").split(";");
-        jQuery("input.min_pris").val(value[0]);
-        jQuery("input.max_pris").val(value[1]);
-    });
-</script>
 </body>
 </html>

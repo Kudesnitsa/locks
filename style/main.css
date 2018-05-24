@@ -1708,7 +1708,7 @@ div.product {
   border: 1px solid #d3d3d3;
   border-radius: 10px;
   margin: 10px 0;
-  padding: 15px ;
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1737,6 +1737,39 @@ div.product {
 }
 .page_news .one_new .text {
   height: 100px;
+}
+.page_account .main_left_menu {
+  display: none;
+}
+.page_account .wrap_main_box {
+  width: 100%;
+  padding: 0;
+}
+.page_account .title_page {
+  border: none;
+}
+.page_account .head_table {
+  background: #f3f2f2;
+}
+.page_account .row div {
+  text-align: center;
+  width: 20%;
+  float: left;
+}
+.page_account .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f3f2f2;
+}
+.page_account .show_more {
+  margin: 50px 0;
 }
 @media (max-width: 1440px) {
   .one_new .text {
