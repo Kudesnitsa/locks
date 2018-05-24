@@ -1202,7 +1202,7 @@ footer {
   float: right;
 }
 
-.page_categories .goods_block .title_goods {
+.title_page {
   color: @subColor;
   .ff-OS-bold();
   font-size: 30px;
@@ -1333,7 +1333,7 @@ footer {
   box-sizing: border-box;
 }
 
-.page_goods .good {
+.wrap_main_box {
   padding: 25px 0 0 25px;
   box-sizing: border-box;
   margin-top: -55px;
@@ -1591,6 +1591,156 @@ footer {
   font-size: 15px;
   border-bottom: 2px solid #efefef;
   color: #777777;
+}
+
+/*** card*******************/
+
+.card .header_one {
+  text-align: left;
+}
+
+#removeproduct {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #c0a375;
+}
+
+.cart_item .item_photo a img {
+  display: block;
+  width: 100%;
+}
+
+.cart_item .item_photo a {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.cart_item > div {
+  display: table;
+  float: left;
+  height: 100%;
+}
+.cart_total_block{
+  width: 100%;
+  padding: 20px 0;
+}
+.cart_total_price_text{
+  float: left;
+}
+.cart_total_price{
+  float: right;
+  text-align: right;
+}
+
+.desc_self, .amount_controller, .spacer  {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.amount_ctrl_block {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.amount_controller .quantity-minus, .amount_controller .quantity-plus {
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c0a375;
+  height: 100%;
+  width: 40px;
+  font-size: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  color: #c0a375;
+  font-family: "Lato", sans-serif;
+
+}
+
+.cart_item.product {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.amount_controller .quantity-input:not([type="radio"]):not([type="checkbox"]) {
+  width: 60px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #c0a375;
+  text-align: center;
+  height: 100%;
+}
+
+.price_cell {
+
+  min-width: 45px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cart_item .item_photo {
+  width: 20%;
+}
+
+.cart_item .amount_ctrl_block {
+  width: 20%;
+}
+
+.cart_item .price_cell {
+  width: 20%;
+  float: right;
+}
+
+.item_desc {
+  width: 30%;
+}
+
+.header_two {
+
+  font-size: 22px;
+  text-align: center;
+}
+
+.cart_del_btn {
+  width: 10%;
+}
+
+.price_cell {
+  text-align: right;
+}
+.cart_form_left{
+   width: 50%;
+  padding-right:35px;
+   box-sizing: border-box;
+   float: left;
+ }
+.cart_form_left input,
+.cart_form_right select,
+.cart_form_right textarea{
+  width: 100%;
+  border-bottom: 1px solid #d3d3d3;
+  border-radius:10px;
+  margin: 10px 0;
+  padding:15px ;
+  box-sizing: border-box;
+}
+.cart_form_right textarea{
+  height: 125px;
+}
+.cart_form_right{
+  width: 50%;
+  padding-left:35px;
+  box-sizing: border-box;
+  float: right;
 }
 
 .page_contacts .info_cont {
