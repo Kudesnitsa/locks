@@ -106,7 +106,7 @@ input:focus, button:focus {
   border: 2px solid @subColor;
   color: @subColor;
   background: transparent;
-  padding: 15px 40px;
+  padding: 10px 15px;
   border-radius: 5px;
 }
 
@@ -299,6 +299,7 @@ a, button {
   width: 70%;
   height: 100%;
   padding: 0 20px;
+  margin: 0;
   float: left;
   border: none;
   border-radius: 5px 0 0 5px;
@@ -1630,13 +1631,14 @@ footer {
   line-height: 20px;
 }
 
-.page_contacts input, .page_contacts textarea {
+ input,textarea {
   display: block;
   width: 100%;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   margin: 20px 0;
   padding: 20px;
+   box-sizing: border-box;
 }
 
 .page_contacts input[placeholder], .page_contacts textarea {
@@ -1909,8 +1911,24 @@ div.product {
   text-align: center;
   width: 20%;
   float: left;
+  padding: 0 10px ;
 }
-
+.page_account .dbtn.sub_dbtn{
+  padding: 10px 30px;
+  margin-left: 40px;
+}
+.page_account input,.page_account textarea{
+  max-width: 440px;
+  margin: 10px auto;
+}
+.page_account .table_order{
+  overflow: auto;
+  width: 100%;
+  min-width: 300px;
+}
+.page_account .title_page, .page_account .profile_form{
+  width: 100%;
+}
 .page_account .row {
   display: flex;
   justify-content: space-around;
@@ -1921,7 +1939,12 @@ div.product {
 .page_account .show_more{
   margin: 50px 0;
 }
-
+.page_account .header_one{
+  text-align: center;
+  .ff();
+  font-size: 21px;
+  padding: 20px 0;
+}
 @media (max-width: 1440px) {
   .one_new .text {
     height: 30px;
@@ -2327,6 +2350,9 @@ div.product {
 }
 
 @media (max-width: 500px) {
+  .page_account .row div{
+    width: 200px;
+  }
   .cart_item {
     height: 200px;
   }
