@@ -34,4 +34,9 @@ jQuery(document).ready(function () {
 
     });
 
+    jQuery('.head .callback .dbtn').on('click', function () {
+        jQuery('.call_back').toggleClass('call_hid');
+        jQuery('.call_popup').toggleClass('call_hid');
+    });
+
 });
