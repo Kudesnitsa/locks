@@ -241,6 +241,7 @@ button {
 .call_popup .call_info .call_tel input {
   width: 60%;
   height: 100%;
+  margin: 0;
   padding: 15px 20px;
   border: none;
   -webkit-box-sizing: border-box;
@@ -413,6 +414,7 @@ button {
 /*main slider block***************************************************************/
 .main_slider_block {
   background-color: #f7f7f7;
+  padding-bottom: 20px;
 }
 .main_left_menu {
   width: 100%;
