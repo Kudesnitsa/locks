@@ -35,8 +35,11 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.head .callback .dbtn').on('click', function () {
-        jQuery('.call_back').toggleClass('call_hid');
-        jQuery('.call_popup').toggleClass('call_hid');
+        jQuery('body').toggleClass('call show_pop_up');
     });
+    jQuery('.head .callback .my_account').on('click', function () {
+        jQuery('body').toggleClass('my_account show_pop_up');
+    });
+
 
 });
