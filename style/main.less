@@ -1344,6 +1344,7 @@ footer {
   font-size: 30px;
   border-bottom: 1px solid #eeeeee;
   margin:0 0 25px;
+  padding: 0 0 15px;
 }
 
 .page_categories .filter {
@@ -1738,12 +1739,11 @@ footer {
   display: inline-block;
   float: left;
   width: 50%;
-  padding: 0 45px 0;
   box-sizing: border-box;
 }
 
 .page_contacts .a_e_p span:not(.title_aep) {
-  display: block;
+  display: inline-block;
   padding: 10px 0;
   .ff-OS-bold();
   font-size: 20px;
@@ -1760,12 +1760,34 @@ footer {
   padding: 45px 0 0;
 }
 
+.a_e_p span img {
+  width: 20px;
+}
+
+.info_cont .a_e_p .icons:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: ;
+  background-size: contain;
+}
+
+.info_cont .a_e_p .icons:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzIwQTgzRTsiIGQ9Ik00MzcuMDE5LDc0Ljk4QzM4OC42NjgsMjYuNjI4LDMyNC4zOCwwLDI1NiwwUzEyMy4zMzMsMjYuNjI4LDc0Ljk4LDc0Ljk4UzAsMTg3LjYyLDAsMjU2ICBjMCw1MS40ODUsMTUuMTU0LDEwMC45MzgsNDMuODc0LDE0My4zNEwwLjY5LDUwMC4xMDZjLTEuMzQzLDMuMTM0LTAuNjA3LDYuOTY2LDEuNzk4LDkuMzgxYzIuNDk1LDIuNTA2LDYuNTE5LDMuMjA2LDkuNzE0LDEuNjg0ICBsOTYuMzU4LTQ1Ljg4NUMxNTEuODU4LDQ5NS44NjYsMjAyLjcyMSw1MTIsMjU2LDUxMmM2OC4zOCwwLDEzMi42NjgtMjYuNjI4LDE4MS4wMTktNzQuOThDNDg1LjM3MSwzODguNjY3LDUxMiwzMjQuMzgsNTEyLDI1NiAgUzQ4NS4zNzEsMTIzLjMzMyw0MzcuMDE5LDc0Ljk4eiIvPgo8Y2lyY2xlIHN0eWxlPSJmaWxsOiNFNUU1RTU7IiBjeD0iMjU2IiBjeT0iMjU2IiByPSIyMTMuMzMzIi8+CjxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE4Ny43MzMiLz4KPHBhdGggc3R5bGU9ImZpbGw6IzIwQTgzRTsiIGQ9Ik0zOTIuMzkxLDM0Mi42NDFsLTcuNjczLTQxLjU2MWMtMC42MzUtMy40MzItMy4yOTUtNi4xMzMtNi43MTgtNi44MThsLTYwLjMzOS0xMi4wNjcgIGMtMi44MDItMC41NTktNS42OTEsMC4zMTctNy43MDksMi4zMzRsLTI0LjUxNCwyNC41MTRjLTQxLjMwMi0xOC41MDctNjQuMjI2LTQxLjQ3OC04NC4zOTYtODQuNTU1bDI0LjQzNS0yNC40MzYgIGMyLjAxOC0yLjAxNywyLjg5My00LjkxLDIuMzM0LTcuNzA4bC0xMi4wNjgtNjAuMzRjLTAuNjg1LTMuNDIzLTMuMzg2LTYuMDg0LTYuODE5LTYuNzE4bC00MS41NjEtNy42NzMgIGMtMS4xMzgtMC4yMS0yLjMxLTAuMTg3LTMuNDQsMC4wN2MtMTAuOTc0LDIuNDk0LTIwLjk4Nyw4LjAyMy0yOC45NTYsMTUuOTk0Yy0xMy44MDEsMTMuODAxLTE5LjA3NSwzMy45MzgtMTUuMjUyLDU4LjIzNyAgYzYuNDE4LDQwLjgwMSwyNi40MDksOTcuNTgzLDYzLjI4OSwxMzQuNjFsMC41MDIsMC41YzM3LjAwMSwzNi44NTUsOTMuNzgyLDU2Ljg0NiwxMzQuNTgzLDYzLjI2NSAgYzUuMTQsMC44MDksMTAuMDkyLDEuMjEsMTQuODM4LDEuMjFjMTcuNjk0LDAsMzIuNTE3LTUuNTgxLDQzLjQtMTYuNDYyYzcuOTctNy45NzEsMTMuNS0xNy45ODQsMTUuOTkzLTI4Ljk1NyAgQzM5Mi41NzgsMzQ0Ljk1MSwzOTIuNjAyLDM0My43OCwzOTIuMzkxLDM0Mi42NDF6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMxODk0MzM7IiBkPSJNMzQ5Ljk5NiwzNzYuNDI4Yy00Ljc0NywwLTkuNjk4LTAuNDAxLTE0LjgzOC0xLjIxYy00MC44MDEtNi40MTktOTcuNTgzLTI2LjQxLTEzNC41ODMtNjMuMjY1ICBsLTAuNTAyLTAuNWMtMzYuODgtMzcuMDI3LTU2Ljg3LTkzLjgwOS02My4yODktMTM0LjYxYy0zLjMyMy0yMS4xMTgsMC4yMzYtMzkuMDg4LDEwLjI4My01Mi40OTIgIGMtNC4zODgsMi41NjUtOC40NTgsNS42ODktMTIuMDk3LDkuMzI4Yy0xMy44MDEsMTMuODAxLTE5LjA3NSwzMy45MzgtMTUuMjUyLDU4LjIzN2M2LjQxOCw0MC44MDEsMjYuNDA5LDk3LjU4Myw2My4yODksMTM0LjYxICBsMC41MDIsMC41YzM3LjAwMSwzNi44NTUsOTMuNzgyLDU2Ljg0NiwxMzQuNTgzLDYzLjI2NWM1LjE0LDAuODA5LDEwLjA5MiwxLjIxLDE0LjgzOCwxLjIxYzE3LjY5NCwwLDMyLjUxNy01LjU4MSw0My40LTE2LjQ2MiAgYzEuOTc0LTEuOTc0LDMuNzk3LTQuMDc1LDUuNDYzLTYuMjg0QzM3Mi43NDcsMzczLjgzNiwzNjIuMDM3LDM3Ni40MjgsMzQ5Ljk5NiwzNzYuNDI4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K) no-repeat;
+  background-size: contain;
+}
+
 .page_contacts .write_us span {
   display: block;
-  padding: 45px 0 0;
-  .ff-OS-bold();
+  padding: 45px 0 30px;
+  .ff();
   color: #3d4550;
-  font-size: 27px;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -2668,6 +2690,10 @@ div.product {
   .page_contacts .a_e_p, .page_contacts .write_us {
     width: 100%;
     padding: 0;
+  }
+
+  .page_contacts .title_aep {
+    padding: 20px 0 0;
   }
 
   /*.page_contacts .dbtn {
