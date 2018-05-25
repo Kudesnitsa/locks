@@ -191,8 +191,8 @@ button {
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 .call_hid {
   position: relative;
@@ -201,6 +201,7 @@ button {
   z-index: -10;
   height: 0;
   width: 0;
+  left: -1000px;
 }
 .call_info {
   padding: 30px 40px;
@@ -1822,7 +1823,7 @@ div.product {
   text-align: center;
   width: 20%;
   float: left;
-  padding: 0 10px ;
+  padding: 0 10px;
 }
 .page_account .dbtn.sub_dbtn {
   padding: 10px 30px;
@@ -2045,28 +2046,29 @@ div.product {
   .brands .one_brand {
     width: 25%;
   }
-  .katalog_footer {
+  footer .katalog_footer {
     display: none;
   }
-  .box {
+  footer .box {
     width: 100%;
     padding: 0;
   }
-  .info_block .cpr {
+  footer .info_block .cpr {
     display: inline-block;
-    padding: 0 20px 25px;
+    padding: 0 40px 25px;
   }
-  .box .logo {
+  footer .box .logo {
     width: 30%;
     float: left;
+    padding: 40px 40px 0;
   }
-  .box .info span {
+  footer .box .info span {
     width: 25%;
     float: left;
-    padding: 50px 0 0;
+    padding: 50px 0 0 40px;
     color: #989ea7;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 20px;
   }
   .banner img {
     width: 40%;
@@ -2101,6 +2103,9 @@ div.product {
   }
   .page_contacts iframe {
     padding: 20px 0 0 0;
+  }
+  .call_popup {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -2183,8 +2188,11 @@ div.product {
     font-size: 21px;
     margin-right: 30px;
   }
-  .box .logo {
+  footer .box .logo {
     padding: 35px 30px 0 20px;
+  }
+  footer .box .info span {
+    font-size: 15px;
   }
   .main_slider img {
     max-height: 300px;
@@ -2301,15 +2309,15 @@ div.product {
   .brands .one_brand {
     width: 50%;
   }
-  .box .logo {
+  footer .box .logo {
     padding: 35px 10px 0 20px;
   }
-  .box .info span {
-    padding: 40px 0 0;
+  footer .box .info span {
+    padding: 40px 0 0 20px;
     line-height: 15px;
     font-size: 10px;
   }
-  .info_block .cpr {
+  footer .info_block .cpr {
     padding: 0 20px;
     font-size: 10px;
   }
