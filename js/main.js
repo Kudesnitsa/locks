@@ -34,7 +34,22 @@ jQuery(document).ready(function () {
 
     });
 
-    jQuery('.head .callback .dbtn').on('click', function () {
+    jQuery('.head .callback').on('click', function () {
+        jQuery('.call_back').toggleClass('call_hid');
+        jQuery('.call_popup').toggleClass('call_hid');
+    });
+
+    jQuery('.call_popup .call_info .call_close').on('click', function () {
+        jQuery('.call_back').toggleClass('call_hid');
+        jQuery('.call_popup').toggleClass('call_hid');
+    });
+
+    jQuery('.call_info .call_tel .dbtn').on('click', function () {
+        jQuery('.call_back').toggleClass('call_hid');
+        jQuery('.call_popup').toggleClass('call_hid');
+    });
+
+    jQuery('.call_back').on('click', function () {
         jQuery('.call_back').toggleClass('call_hid');
         jQuery('.call_popup').toggleClass('call_hid');
     });
