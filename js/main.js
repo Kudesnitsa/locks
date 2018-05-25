@@ -5,10 +5,10 @@ jQuery(document).ready(function () {
 
     });
     jQuery('.goods .item .dbtn').on('click', function () {
-        jQuery('.popup .goods .photo').html(jQuery(this).parents('.o_goods').find('.photo').html());
-        jQuery('.popup .goods .info').html(jQuery(this).parents('.o_goods').find('.info').html());
-        jQuery('.popup .goods .pris').html(jQuery(this).parents('.o_goods').find('.pris').html());
-        jQuery('.popup').toggleClass('hidden');
+        jQuery('.good_add .goods .photo').html(jQuery(this).parents('.o_goods').find('.photo').html());
+        jQuery('.good_add .goods .info').html(jQuery(this).parents('.o_goods').find('.info').html());
+        jQuery('.good_add .goods .pris').html(jQuery(this).parents('.o_goods').find('.pris').html());
+        jQuery('body').toggleClass('show_goods_add show_pop_up');
     });
 
     jQuery('.tab_categ').on('click', function () {
@@ -33,12 +33,16 @@ jQuery(document).ready(function () {
         jQuery('.have_sub_item .sub_menu').toggleClass('sec_sub_menu');
 
     });
-
-    jQuery('.head .callback .dbtn').on('click', function () {
-        jQuery('body').toggleClass('call show_pop_up');
+    jQuery('.close_popup').on('click', function () {
+        jQuery('body').removeClass();
     });
-    jQuery('.head .callback .my_account').on('click', function () {
-        jQuery('body').toggleClass('my_account show_pop_up');
+
+    jQuery('.head .callback').on('click', function () {
+        jQuery('body').toggleClass('show_coll_back  show_pop_up');
+    });
+
+    jQuery('.my_account').on('click', function () {
+        jQuery('body').toggleClass('show_login show_pop_up');
     });
 
 

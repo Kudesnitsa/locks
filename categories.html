@@ -14,6 +14,88 @@
     <title>locks</title>
 </head>
 <body>
+<div class="popup_back close_popup"></div>
+<div class="call_popup  popup call_hid">
+    <div class="call_info">
+        <div class="close close_popup"></div>
+        <span>Обратный звонок</span>
+        <span>Оставьте номер телефона и менеджер перезвонит вам в ближайшее время.</span>
+        <div class="call_tel">
+            <input type="tel" placeholder="+38(0__)__-__-___">
+            <button class="dbtn main_dbtn">Заказать</button>
+        </div>
+    </div>
+</div>
+<div class="login_p  popup">
+    <div class="close close_popup"></div>
+    <div class="title">Вход</div>
+    <div class="email"><input type="email" placeholder="Email"></div>
+    <div class="password"><input type="password" placeholder="Password"></div>
+    <div class="login_link clearfix">
+        <div class="remember_me">
+            <input type="checkbox" value="None" id="remember_me" name="check" checked/>
+            <label for="remember_me"><span class="text">Запомнить меня</span></label>
+        </div>
+        <a href="" class="forgot_pas">
+            Забыли пароль?
+        </a>
+    </div>
+    <a class="dbtn main_dbtn">Войти</a>
+    <div class="regis_box">
+        <span class="text">
+         Вы всё ещё не зарегистрированы?
+        </span>
+        <a href="" class="link_regis">
+            Зарегистрируйтесь
+        </a>
+    </div>
+</div>
+<div class="good_add popup clearfix">
+    <div class="clearfix">
+        <div class="title">Товар добавлен в корзину</div>
+        <div class="close close_popup"></div>
+    </div>
+    <div class="goods clearfix">
+        <div class="del">
+
+        </div>
+        <div class="photo">
+            <img src="img/goods.png" alt="goods" title="goods">
+        </div>
+        <div class="info">
+
+            <a class="name">
+                Замок врезной Фурор
+            </a>
+            <a class="article">MP32-H14 MCF
+            </a>
+            <span class="maker">
+                            Stanley
+                        </span>
+        </div>
+
+        <div class="quantity">
+            <div class="spacer">
+                <input name="quantityv" type="hidden" value="1">
+                <a href="javascript:void(0);" class="qty-elem qty-ctr qty-minus quantity-minus">-</a>
+                <input type="text" class="qty-elem qty-value quantity-input" data-itemid="0" title="Update Quantity In Cart" size="2" maxlength="4" value="1" id="quantity_0" data-init="1" data-step="1" name="quantityval[0]" data-minerror="The minimum order level for this product is 0 items." data-maxerror="The maximum order level for this product is 0 items.">
+                <a href="javascript:void(0);" class="qty-elem qty-ctr qty-plus quantity-plus">+</a>
+            </div>
+        </div>
+
+        <div class="pris">
+            8 156
+        </div>
+    </div>
+    <div class="button_box clearfix">
+        <a class="back close_popup">
+            Продолжить выбор товаров
+        </a>
+        <a class="dbtn main_dbtn">
+            Оформить заказ
+        </a>
+    </div>
+</div>
 <header>
     <div class="sub_head">
         <div class="wrap">
@@ -26,7 +108,7 @@
             <a class="schedule" href="#">
                 <span>График работы</span> пн-пт: 09:00 - 18:00, сб-вс до 13:00
             </a>
-            <a class="my_account" href="#">
+            <a class="my_account">
                 Мой аккаунт
             </a>
         </div>
@@ -67,7 +149,6 @@
             </ul>
         </div>
     </nav>
-
 </header>
 <main class="page_categories">
     <section class="main_box">
