@@ -1597,13 +1597,16 @@ footer {
 }
 .page_contacts .a_e_p span:not(.title_aep) {
   display: inline-block;
-  padding: 10px 0;
+  padding: 10px 0 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
   line-height: 30px;
   color: #777777;
+}
+.page_contacts .a_e_p span:last-child {
+  padding: 0;
 }
 .page_contacts .title_aep {
   display: block;
@@ -1623,7 +1626,7 @@ footer {
   width: 20px;
   height: 20px;
   display: inline-block;
-  background: ;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48c2NyaXB0IHhtbG5zPSIiPjwvc2NyaXB0PjxzY3JpcHQgeG1sbnM9IiI+PC9zY3JpcHQ+PHBhdGggc3R5bGU9ImZpbGw6IzAwOTlGRiIgZD0iTTEzNS44NzYsMjgwLjk2MkwxMC4xMDUsMjI1LjkzYy0xNC4xNzQtNi4xOTctMTMuMjE1LTI2LjYyMSwxLjQ4MS0zMS40NTZMNDg5Ljg0NSwzNi44MTEgIGMxMi41MTItNC4xMjEsMjQuNzA1LDcuMDQ5LDIxLjY5MSwxOS44ODFsLTk1LjU3MSw0MDYuMzUxYy0yLjg1NCwxMi4xNC0xNy40NDIsMTcuMDkxLTI3LjA5LDkuMTlsLTExMi4zLTkxLjg4N0wxMzUuODc2LDI4MC45NjJ6IiBkYXRhLW9yaWdpbmFsPSIjRUJGMEZBIiBjbGFzcz0iYWN0aXZlLXBhdGgiIGRhdGEtb2xkX2NvbG9yPSIjMDA5MUZGIj48L3BhdGg+PHBhdGggc3R5bGU9ImZpbGw6I0E1QzhFMCIgZD0iTTM5Ni40NjUsMTI0LjU2TDEzNS44NzYsMjgwLjk2MmwzMS44ODUsMTQ3Ljg5OWMyLjg2LDEzLjI2OSwxOC41LDE5LjExNywyOS4zNjQsMTAuOTgxICBsNzkuNDUxLTU5LjQ5N2wtNjUuMzcyLTUzLjQ5OWwxOTMuNDk1LTE5MS42OTNDNDEwLjM3MiwxMjkuNTMyLDQwMy4zMTQsMTIwLjQ0OSwzOTYuNDY1LDEyNC41NnoiIGRhdGEtb3JpZ2luYWw9IiNCRUMzRDIiIGNsYXNzPSIiIGRhdGEtb2xkX2NvbG9yPSIjOTBDOEVEIj48L3BhdGg+PHBhdGggc3R5bGU9ImZpbGw6IzE2MDBGRiIgZD0iTTE3OC4yNzUsNDQxLjg5NGM1Ljg1OCwyLjY0OCwxMy4wMzcsMi4zMDIsMTguODUtMi4wNTJsNzkuNDUxLTU5LjQ5N2wtMzIuNjg2LTI2Ljc0OWwtMzIuNjg2LTI2Ljc0OSAgTDE3OC4yNzUsNDQxLjg5NHoiIGRhdGEtb3JpZ2luYWw9IiNBRkI0QzgiIGNsYXNzPSIiIGRhdGEtb2xkX2NvbG9yPSIjQUZCNEM4Ij48L3BhdGg+PGxpbmsgeG1sbnM9IiI+PC9saW5rPjxzY3JpcHQgeG1sbnM9IiI+PC9zY3JpcHQ+PC9nPiA8L3N2Zz4=) no-repeat;
   background-size: contain;
 }
 .info_cont .a_e_p .icons:after {
@@ -1638,10 +1641,8 @@ footer {
   display: block;
   padding: 45px 0 30px;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  color: #373e4a;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   color: #3d4550;
   font-size: 18px;
   line-height: 20px;
