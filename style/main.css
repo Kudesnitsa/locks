@@ -182,14 +182,30 @@ button {
   visibility: hidden;
   display: block;
   background: rgba(0, 0, 0, 0.4);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0s ease;
+  transition: 0s ease;
 }
 .show_pop_up .popup_back {
   z-index: 10;
   opacity: 1;
   left: 0;
   visibility: visible;
+}
+.show_thank .thank {
+  position: fixed;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 380px;
+  background: white;
+  border-radius: 4px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 .show_coll_back .call_popup {
   position: fixed;
@@ -1699,6 +1715,32 @@ textarea {
   margin: 20px auto;
 }
 /*** card*******************/
+.heder_popup {
+  width: 100%;
+}
+.thank {
+  padding: 30px;
+}
+.text .number {
+  text-decoration: underline;
+}
+.thank .title {
+  text-align: center;
+  color: #ea3a2d;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+.thank .text {
+  text-align: center;
+}
+.thank .pris,
+.pris:after {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #373e4a;
+  font-weight: 400;
+  font-style: normal;
+}
 .card .header_one {
   text-align: left;
 }

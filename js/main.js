@@ -47,5 +47,9 @@ jQuery(document).ready(function () {
     jQuery('.mob.icon').on('click', function () {
         jQuery('body').toggleClass('mob_menu_show');
     });
+    jQuery('.in_stock_btn.confirm-order').on('click', function () {
+        jQuery('body').toggleClass('show_thank  show_pop_up');
+    });
+
 
 });

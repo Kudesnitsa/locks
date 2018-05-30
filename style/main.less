@@ -243,7 +243,7 @@ a, button {
   visibility: hidden;
   display: block;
   background: rgba(0, 0, 0, 0.4);
-  transition: 0.3s ease;
+  transition: 0s ease;
 }
 
 .show_pop_up .popup_back {
@@ -252,7 +252,20 @@ a, button {
   left: 0;
   visibility: visible;
 }
-
+.show_thank .thank{
+  position: fixed;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 380px;
+  background: white;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease;
+}
 .show_coll_back .call_popup {
   position: fixed;
   display: block;
@@ -1845,7 +1858,29 @@ input, textarea {
 }
 
 /*** card*******************/
+.heder_popup{
+  width: 100%;
 
+}
+.thank{
+  padding: 30px;
+}
+.text .number{
+  text-decoration: underline;
+}
+.thank .title{
+  text-align: center;
+  color: @subColor;
+  font-size: 25px;
+  margin:0 0 20px;
+}
+.thank .text{
+  text-align: center;
+}
+.thank .pris,.pris:after{
+  font-size: 14px;
+  .ff();
+}
 .card .header_one {
   text-align: left;
 }
