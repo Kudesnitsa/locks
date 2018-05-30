@@ -5,6 +5,7 @@
 @nameCGoods: #568da7;
 @mainSliderBlock: #f7f7f7;
 @text_sub: #80818a;
+@colorBorder:#a5a5a5;
 
 * {
   margin: 0;
@@ -134,7 +135,7 @@ a, button {
 }
 
 .tabs {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid @colorBorder;
   margin-bottom: 20px;
 }
 
@@ -288,7 +289,7 @@ a, button {
 .call_popup .call_info span {
   display: block;
   font-size: 14px;
-  color: #a3a3a3;
+  color: @colorBorder;
   padding: 0 0 15px;
 }
 
@@ -501,7 +502,7 @@ a, button {
 
 .main_left_menu {
   width: 100%;
-  box-shadow: 0 0 10px #eeeeee;
+  box-shadow: 0 0 10px @colorBorder;
   border-radius: 0 0 5px 5px;
   background-color: white;
   display: inline-block;
@@ -524,7 +525,7 @@ a, button {
 }
 
 .continue_menu {
-  box-shadow: 0 8px 10px #eeeeee;
+  box-shadow: 0 8px 10px @colorBorder;
   position: absolute;
   padding: 0 20px 20px;
   top: 0;
@@ -872,7 +873,7 @@ a, button {
     left: 0;
     background: #fcfff4;
     border-radius: 4px;
-    border: 1px solid #c2c2c2;
+    border: 1px solid @colorBorder;
     .text {
       margin-left: 25px;
       white-space: nowrap;
@@ -1070,7 +1071,7 @@ a, button {
   position: absolute;
   right: 0;
   top: 0;
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid @colorBorder;
 }
 
 .goods .phone img {
@@ -1342,7 +1343,7 @@ footer {
   .ff();
   font-size: 12px;
   line-height: 27px;
-  color: #c2c2c2;
+  color: @colorBorder;
   text-transform: uppercase;
 }
 
@@ -1366,7 +1367,7 @@ footer {
   color: @subColor;
   .ff-OS-bold();
   font-size: 30px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid @colorBorder;
   margin: 0 0 25px;
   padding: 0 0 15px;
 }
@@ -1397,7 +1398,7 @@ footer {
 .page_categories .filter .item {
   cursor: pointer;
   padding: 5px 20px;
-  border: 2px solid #a7acb5;
+  border: 2px solid @colorBorder;
   border-radius: 50px;
   display: inline-block;
   /* margin: 15px;*/
@@ -1435,7 +1436,7 @@ footer {
 
 .page_categories .r_pris {
   text-align: center;
-  border: 1px solid #eeeeee;
+  border: 1px solid @colorBorder;
   border-radius: 5px;
   width: 10%;
   float: left;
@@ -1449,7 +1450,7 @@ footer {
   position: absolute;
   right: 0;
   top: 0;
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid @colorBorder;
 }
 
 .pagina {
@@ -1463,7 +1464,7 @@ footer {
 }
 
 .pagina .arrow.left {
-  background: #d3d7dd;
+  background: @colorBorder;
 }
 
 .pagina .item {
@@ -1687,7 +1688,7 @@ footer {
   box-sizing: border-box;
   float: left;
   padding: 10px;
-  border: 1px solid #dedede;
+  border: 1px solid @colorBorder;
   border-radius: 10px;
   position: relative;
 }
@@ -1730,7 +1731,7 @@ footer {
 .good_attr .info_cap {
   .ff();
   display: table-caption;
-  background: #efefef;
+  background: @colorBorder;
   color: #20252d;
   padding: 20px 25px;
   text-transform: uppercase;
@@ -1745,7 +1746,7 @@ footer {
   display: table-cell;
   padding: 20px;
   font-size: 15px;
-  border-bottom: 2px solid #efefef;
+  border-bottom: 2px solid @colorBorder;
   color: #777777;
 }
 
@@ -1756,7 +1757,7 @@ footer {
   display: block;
   margin: 0 0 0 45px;
   padding: 0 0 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid@colorBorder;
 }
 
 .page_contacts .a_e_p, .page_contacts .write_us {
@@ -1822,7 +1823,7 @@ footer {
 input, textarea {
   display: block;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid@colorBorder;
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
@@ -1984,7 +1985,7 @@ input, textarea {
 
 .cart_item.product {
   width: 100%;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid @colorBorder;
 }
 
 .amount_controller .quantity-input:not([type="radio"]):not([type="checkbox"]) {
@@ -2002,7 +2003,7 @@ input, textarea {
 }
 
 .quantity .spacer {
-  border: 1px solid #eeeeee;
+  border: 1px solid @colorBorder;
   border-radius: 10px;
   display: table;
 }
@@ -2067,7 +2068,7 @@ div.product {
 .cart_form_right textarea {
   width: 100%;
   display: block;
-  border: 1px solid #d3d3d3;
+  border: 1px solid @colorBorder;
   border-radius: 10px;
   margin: 10px 0;
   padding: 15px;
@@ -2120,7 +2121,7 @@ div.product {
 }
 
 .page_account .head_table {
-  background: #f3f2f2;
+  background: @colorBorder;
 }
 
 .page_account .row div {
@@ -2155,7 +2156,7 @@ div.product {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid #f3f2f2;
+  border-bottom: 1px solid @colorBorder;
 }
 
 .page_account .show_more {
@@ -2207,7 +2208,7 @@ div.product {
   .mob_menu li {
     padding: 20px;
     display: block;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid @colorBorder;
     box-sizing: border-box;
   }
 
@@ -2444,7 +2445,7 @@ div.product {
     position: absolute;
     right: 0;
     top: 0;
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid @colorBorder;
   }
 
   .one_new .info .title {
@@ -2601,7 +2602,7 @@ div.product {
     position: absolute;
     right: 0;
     top: 0;
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid @colorBorder;
   }
 
   .brands .one_brand:nth-child(5n),
@@ -2619,7 +2620,7 @@ div.product {
   }
 
   .block_box .banner {
-    border: 1px solid #ececec;
+    border: 1px solid @colorBorder;
     border-radius: 5px;
   }
 
