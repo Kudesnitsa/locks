@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function () {
     jQuery('.seo_text .more_see').on('click', function () {
         jQuery('.seo_text').toggleClass('hidden');
@@ -21,9 +20,9 @@ jQuery(document).ready(function () {
         jQuery('.popup').addClass('hidden');
     });
     jQuery('.popup .del').on('click', function () {
-        jQuery('.popup .title').toggle();
-        jQuery('.popup .goods').html('<h2 class="title_del">Товар удален из корзины</h2>');
-    }
+            jQuery('.popup .title').toggle();
+            jQuery('.popup .goods').html('<h2 class="title_del">Товар удален из корзины</h2>');
+        }
     );
     jQuery('.mob_but_kat button').on('click', function () {
         jQuery('.main_left_menu').toggleClass('hid_menu');
@@ -38,12 +37,15 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.head .callback').on('click', function () {
-        jQuery('body').toggleClass('show_coll_back  show_pop_up');
+        jQuery('body').toggleClass('show_coll_back  show_pop_up').removeClass('mob_menu_show');
     });
 
     jQuery('.my_account').on('click', function () {
-        jQuery('body').toggleClass('show_login show_pop_up');
+        jQuery('body').toggleClass('show_login show_pop_up').removeClass('mob_menu_show');
     });
 
+    jQuery('.mob.icon').on('click', function () {
+        jQuery('body').toggleClass('mob_menu_show');
+    });
 
 });
