@@ -5,7 +5,7 @@
 @nameCGoods: #568da7;
 @mainSliderBlock: #f7f7f7;
 @text_sub: #80818a;
-@colorBorder:#a5a5a5;
+@colorBorder: #a5a5a5;
 
 * {
   margin: 0;
@@ -253,7 +253,8 @@ a, button {
   left: 0;
   visibility: visible;
 }
-.show_thank .thank{
+
+.show_thank .thank {
   position: fixed;
   display: block;
   visibility: visible;
@@ -267,6 +268,7 @@ a, button {
   transform: translate(-50%, -50%);
   transition: 0.2s ease;
 }
+
 .show_coll_back .call_popup {
   position: fixed;
   display: block;
@@ -361,7 +363,7 @@ a, button {
 }
 
 .search input {
-  width: 75%;
+  width: 70%;
   height: 100%;
   padding: 0 20px;
   margin: 0;
@@ -1829,7 +1831,7 @@ footer {
   display: block;
   margin: 0 0 0 45px;
   padding: 0 0 20px;
-  border-bottom: 1px solid@colorBorder;
+  border-bottom: 1px solid @colorBorder;
 }
 
 .page_contacts .a_e_p, .page_contacts .write_us {
@@ -1895,7 +1897,7 @@ footer {
 input, textarea {
   display: block;
   width: 100%;
-  border: 1px solid@colorBorder;
+  border: 1px solid @colorBorder;
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
@@ -1931,29 +1933,35 @@ input, textarea {
 }
 
 /*** card*******************/
-.heder_popup{
+.heder_popup {
   width: 100%;
 
 }
-.thank{
+
+.thank {
   padding: 30px;
 }
-.text .number{
+
+.text .number {
   text-decoration: underline;
 }
-.thank .title{
+
+.thank .title {
   text-align: center;
   color: @subColor;
   font-size: 25px;
-  margin:0 0 20px;
+  margin: 0 0 20px;
 }
-.thank .text{
+
+.thank .text {
   text-align: center;
 }
-.thank .pris,.pris:after{
+
+.thank .pris, .pris:after {
   font-size: 14px;
   .ff();
 }
+
 .card .header_one {
   text-align: left;
 }
@@ -2256,6 +2264,151 @@ div.product {
   position: fixed;
   left: 0;
   z-index: 9;
+}
+
+/********** one new *********/
+
+.page_one_new .new_back {
+  background: white;
+}
+
+.page_one_new .main_left_menu {
+  display: none;
+}
+
+.page_one_new .one_new_block {
+  width: 100%;
+  box-sizing: border-box;
+  float: right;
+  display: inline-block;
+}
+
+.page_one_new .one_new_block .date span {
+  .ff();
+  display: block;
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 12px;
+}
+
+.page_one_new .one_new_block .new_title span {
+  display: block;
+  .ff-OS-semibold();
+  color: #44465b;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.page_one_new .one_new_block img {
+  width: 100%;
+}
+
+.page_one_new .one_new_block .new_txt .first_sp {
+  padding: 30px 0 20px;
+}
+
+.page_one_new .one_new_block .new_txt span {
+  .ff();
+  display: block;
+  color: #414141;
+  font-size: 15px;
+  padding: 0 0 20px;
+}
+
+.page_one_new .one_new_block .new_txt ul {
+  padding: 0 0 170px;
+}
+
+.page_one_new .one_new_block .to_all_news a:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDc3LjE3NSA0NzcuMTc1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NzcuMTc1IDQ3Ny4xNzU7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PHNjcmlwdCB4bWxucz0iIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM3MDZFNkUiIGRhdGEtb2xkX2NvbG9yPSIjNjg2NzY3Ij48L3NjcmlwdD48c2NyaXB0IHhtbG5zPSIiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzcwNkU2RSIgZGF0YS1vbGRfY29sb3I9IiM2ODY3NjciPjwvc2NyaXB0PjxnPgoJPHBhdGggZD0iTTE0NS4xODgsMjM4LjU3NWwyMTUuNS0yMTUuNWM1LjMtNS4zLDUuMy0xMy44LDAtMTkuMXMtMTMuOC01LjMtMTkuMSwwbC0yMjUuMSwyMjUuMWMtNS4zLDUuMy01LjMsMTMuOCwwLDE5LjFsMjI1LjEsMjI1ICAgYzIuNiwyLjYsNi4xLDQsOS41LDRzNi45LTEuMyw5LjUtNGM1LjMtNS4zLDUuMy0xMy44LDAtMTkuMUwxNDUuMTg4LDIzOC41NzV6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM3MDZFNkUiIGRhdGEtb2xkX2NvbG9yPSIjNjg2NzY3Ij48L3BhdGg+CjwvZz48bGluayB4bWxucz0iIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM3MDZFNkUiIGRhdGEtb2xkX2NvbG9yPSIjNjg2NzY3Ij48L2xpbms+PHNjcmlwdCB4bWxucz0iIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM3MDZFNkUiIGRhdGEtb2xkX2NvbG9yPSIjNjg2NzY3Ij48L3NjcmlwdD48L2c+IDwvc3ZnPg==) no-repeat;
+  background-size: contain;
+  padding: 0 5px 0 0;
+}
+
+.page_one_new .one_new_block .to_all_news a {
+  .ff();
+  text-decoration: underline;
+  color: #727272;
+  font-size: 15px;
+}
+
+.page_one_new .one_new_block .new_txt ul {
+  margin: 0 0 0 20px;
+}
+
+.page_one_new .one_new_block .new_txt ul li {
+  list-style: disc;
+  display: list-item;
+  color: #ea3a2d;
+}
+
+.page_one_new .one_new_block .new_txt ul li span {
+  color: #414141;
+}
+
+/****** error page ******/
+
+.new_back {
+  background: #ededed;
+}
+
+.error_page .error_block {
+  width: calc(~"75% - 25px");
+  box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  margin: 0 0 0 25px;
+}
+
+.error_page .error_block .txt, .error_page .error_page .er_img {
+  width: 50%;
+  float: left;
+  display: inline-block;
+}
+
+.error_page .error_block .txt span {
+  padding: 20px 0 0 0;
+}
+
+.error_page .error_block .txt span, .error_page .dbtn {
+  display: table;
+  margin: 0 auto;
+}
+
+.error_page .error_block .txt span:first-child {
+  font-weight: normal;
+  font-size: 210px;
+  text-shadow: 2px 2px 40px #999999;
+  color: #ffffff;
+}
+
+.error_page .error_block .txt span:nth-child(2) {
+  .ff-OS-italic();
+  color: #44465b;
+  font-size: 27px;
+  padding: 0 0 40px;
+}
+
+.error_page .dbtn {
+  padding: 0;
+}
+
+.error_page .dbtn a {
+  display: block;
+  .ff-OS-semibold();
+  padding: 20px 35px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/****** brands page ******/
+
+.page_brands .brands_box .brands .one_brand {
+  width: 25%;
 }
 
 @media (max-width: 1440px) {
@@ -2576,6 +2729,19 @@ div.product {
     padding: 20px 0 0 0;
   }
 
+  .page_one_new .main_left_menu {
+    display: inline-block;
+  }
+
+  .page_one_new .one_new_block .new_txt ul {
+    padding: 0 0 50px;
+  }
+
+  .error_page .error_block {
+    width: 100%;
+    margin: 0;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -2731,6 +2897,23 @@ div.product {
   .page_categories .filter .pris_input {
     width: 60%;
     margin: -10px 5%;
+  }
+
+  .error_page .error_block .txt {
+    width: 100%;
+  }
+
+  .error_page .error_block .er_img {
+    display: none;
+  }
+
+  .error_page .error_block .txt span:first-child {
+    font-size: 180px;
+  }
+
+  .error_page .error_block .txt span:nth-child(2) {
+    font-size: 20px;
+    padding: 0 0 20px;
   }
 
 }
@@ -2929,6 +3112,10 @@ div.product {
 
   .page_contacts .title_aep {
     padding: 20px 0 0;
+  }
+
+  .error_page .error_block .txt span:nth-child(2) {
+    font-size: 19px;
   }
 
   /*.page_contacts .dbtn {
