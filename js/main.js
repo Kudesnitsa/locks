@@ -40,6 +40,10 @@ jQuery(document).ready(function () {
         jQuery('body').toggleClass('show_coll_back  show_pop_up').removeClass('mob_menu_show');
     });
 
+    jQuery('.katalog_footer .callback').on('click', function () {
+        jQuery('body').toggleClass('show_coll_back  show_pop_up');
+    });
+
     jQuery('.my_account').on('click', function () {
         jQuery('body').toggleClass('show_login show_pop_up').removeClass('mob_menu_show');
     });
