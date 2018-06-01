@@ -89,7 +89,7 @@ button {
   text-decoration: none;
 }
 .tabs {
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 20px;
 }
 .tabs .tab {
@@ -229,7 +229,7 @@ button {
 .call_popup .call_info span {
   display: block;
   font-size: 14px;
-  color: #a5a5a5;
+  color: #e5e5e5;
   padding: 0 0 15px;
 }
 .call_popup .call_info span:nth-child(2) {
@@ -423,8 +423,8 @@ button {
 }
 .main_left_menu {
   width: 100%;
-  -webkit-box-shadow: 0 0 10px #a5a5a5;
-          box-shadow: 0 0 10px #a5a5a5;
+  -webkit-box-shadow: 0 0 10px #e5e5e5;
+          box-shadow: 0 0 10px #e5e5e5;
   border-radius: 0 0 5px 5px;
   background-color: white;
   display: inline-block;
@@ -446,8 +446,8 @@ button {
   position: absolute;
 }
 .continue_menu {
-  -webkit-box-shadow: 0 8px 10px #a5a5a5;
-          box-shadow: 0 8px 10px #a5a5a5;
+  -webkit-box-shadow: 0 8px 10px #e5e5e5;
+          box-shadow: 0 8px 10px #e5e5e5;
   position: absolute;
   padding: 0 20px 20px;
   top: 0;
@@ -779,7 +779,7 @@ button {
   left: 0;
   background: #fcfff4;
   border-radius: 4px;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #e5e5e5;
 }
 .remember_me label .text {
   margin-left: 25px;
@@ -959,7 +959,7 @@ button {
   position: absolute;
   right: 0;
   top: 0;
-  border-right: 1px solid #a5a5a5;
+  border-right: 1px solid #e5e5e5;
 }
 .goods .phone img {
   width: 100%;
@@ -1243,7 +1243,7 @@ footer {
   font-style: normal;
   font-size: 14px;
   line-height: 27px;
-  color: #a5a5a5;
+  color: #e5e5e5;
   text-transform: uppercase;
   color: #9099a7;
 }
@@ -1314,7 +1314,7 @@ footer {
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #e5e5e5;
   margin: 0 0 25px;
   padding: 0 0 15px;
 }
@@ -1350,7 +1350,7 @@ footer {
 .page_categories .filter .item {
   cursor: pointer;
   padding: 5px 20px;
-  border: 2px solid #a5a5a5;
+  border: 2px solid #e5e5e5;
   border-radius: 50px;
   display: inline-block;
   /* margin: 15px;*/
@@ -1385,7 +1385,7 @@ footer {
 }
 .page_categories .r_pris {
   text-align: center;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #e5e5e5;
   border-radius: 5px;
   width: 10%;
   float: left;
@@ -1398,7 +1398,7 @@ footer {
   position: absolute;
   right: 0;
   top: 0;
-  border-right: 1px solid #a5a5a5;
+  border-right: 1px solid #e5e5e5;
 }
 .pagina {
   display: table;
@@ -1409,7 +1409,7 @@ footer {
   float: left;
 }
 .pagina .arrow.left {
-  background: #a5a5a5;
+  background: #e5e5e5;
 }
 .pagina .item {
   font-size: 25px;
@@ -1614,7 +1614,7 @@ footer {
           box-sizing: border-box;
   float: left;
   padding: 10px;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #e5e5e5;
   border-radius: 10px;
   position: relative;
 }
@@ -1656,7 +1656,7 @@ footer {
   font-weight: 400;
   font-style: normal;
   display: table-caption;
-  background: #a5a5a5;
+  background: #e5e5e5;
   color: #20252d;
   padding: 20px 25px;
   text-transform: uppercase;
@@ -1673,7 +1673,7 @@ footer {
   display: table-cell;
   padding: 20px;
   font-size: 15px;
-  border-bottom: 2px solid #a5a5a5;
+  border-bottom: 2px solid #e5e5e5;
   color: #777777;
 }
 .page_contacts .title span {
@@ -1685,7 +1685,7 @@ footer {
   display: block;
   margin: 0 0 0 45px;
   padding: 0 0 20px;
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .page_contacts .a_e_p,
 .page_contacts .write_us {
@@ -1751,7 +1751,7 @@ input,
 textarea {
   display: block;
   width: 100%;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #e5e5e5;
   border-radius: 5px;
   padding: 20px;
   -webkit-box-sizing: border-box;
@@ -1928,7 +1928,7 @@ textarea {
 }
 .cart_item.product {
   width: 100%;
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .amount_controller .quantity-input:not([type="radio"]):not([type="checkbox"]) {
   width: 60%;
@@ -1944,7 +1944,7 @@ textarea {
   color: #757575;
 }
 .quantity .spacer {
-  border: 1px solid #a5a5a5;
+  border: 1px solid #e5e5e5;
   border-radius: 10px;
   display: table;
 }
@@ -1997,7 +1997,7 @@ div.product {
 .cart_form_right textarea {
   width: 100%;
   display: block;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #e5e5e5;
   border-radius: 10px;
   margin: 10px 0;
   padding: 15px;
@@ -2041,7 +2041,7 @@ div.product {
   border: none;
 }
 .page_account .head_table {
-  background: #a5a5a5;
+  background: #e5e5e5;
 }
 .page_account .row div {
   text-align: center;
@@ -2077,7 +2077,7 @@ div.product {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .page_account .show_more {
   margin: 50px 0;
@@ -2251,7 +2251,7 @@ div.product {
   width: 40%;
   float: left;
   margin: 0 20px 20px 0  ;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #e5e5e5;
 }
 .brand_box .brand.name {
   font-size: 20px;
@@ -2288,7 +2288,7 @@ div.product {
   .mob_menu li {
     padding: 20px;
     display: block;
-    border-bottom: 1px solid #a5a5a5;
+    border-bottom: 1px solid #e5e5e5;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -2494,7 +2494,7 @@ div.product {
     position: absolute;
     right: 0;
     top: 0;
-    border-right: 1px solid #a5a5a5;
+    border-right: 1px solid #e5e5e5;
   }
   .one_new .info .title {
     font-size: 11px;
@@ -2607,7 +2607,7 @@ div.product {
     position: absolute;
     right: 0;
     top: 0;
-    border-right: 1px solid #a5a5a5;
+    border-right: 1px solid #e5e5e5;
   }
   .brands .one_brand:nth-child(5n),
   .brands .one_brand:nth-child(4n) {
@@ -2621,7 +2621,7 @@ div.product {
     padding: 20px 15px 5px;
   }
   .block_box .banner {
-    border: 1px solid #a5a5a5;
+    border: 1px solid #e5e5e5;
     border-radius: 5px;
   }
   .block_box img {
