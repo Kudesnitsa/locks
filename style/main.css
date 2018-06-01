@@ -2247,6 +2247,27 @@ div.product {
 .page_brands .brands_box .brands .one_brand {
   width: 25%;
 }
+.brand_box img {
+  width: 40%;
+  float: left;
+  margin: 0 20px 20px 0  ;
+  border: 1px solid #a5a5a5;
+}
+.brand_box .brand.name {
+  font-size: 20px;
+}
+.back_brands {
+  margin: 20px 0;
+  display: table;
+}
+.back_brands span {
+  border-bottom: 1px solid ;
+  margin: 10px 0;
+}
+.back_brands:before {
+  content: "\2039";
+  font-size: 20px;
+}
 @media (max-width: 1440px) {
   .one_new .text {
     height: 30px;
@@ -2677,6 +2698,12 @@ div.product {
   }
 }
 @media (max-width: 500px) {
+  .page_brand .brand_box {
+    margin: 30px 0;
+  }
+  .brand_box img {
+    width: 100%;
+  }
   .mob_menu {
     height: calc(100% - 40px);
   }
