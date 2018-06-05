@@ -1402,6 +1402,7 @@ footer {
 .pagina {
   display: table;
   margin: auto;
+  padding: 0 0 30px;
 }
 .pagina .arrow {
   margin: 0 20px;
@@ -1608,11 +1609,10 @@ footer {
   background-size: contain;
 }
 .page_goods .count {
-  width: 40%;
+  width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left;
-  padding: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 10px;
   position: relative;
@@ -1637,7 +1637,8 @@ footer {
   border: none;
   width: 45%;
   float: right;
-  padding: 15px;
+  padding: 20px;
+  font-size: 18px;
 }
 .page_goods .buy {
   margin: 20px 0;
@@ -2361,7 +2362,7 @@ div.product {
   margin: 10px auto;
   background: #ea3a2d;
   color: white;
-  padding: 20px 45px;
+  padding: 10px 45px;
   border-radius: 5px;
   font-size: 18px;
 }
@@ -2790,11 +2791,32 @@ div.product {
     font-size: 20px;
     padding: 0 0 20px;
   }
+  .error_page .dbtn a {
+    padding: 15px 30px;
+    font-size: 12px;
+  }
   .page_brands .brands_box .brands_two .one_brand {
     width: 33.3%;
   }
-  .feedback_page .feedbacks .pagina {
-    padding: 50px 0;
+  .pagina {
+    padding: 20px 0;
+  }
+  .pagina .arrow {
+    margin: 0 10px;
+  }
+  .pagina .dbtn {
+    padding: 5px 15px;
+  }
+  .pagina .item {
+    padding: 0 10px;
+    font-size: 20px;
+  }
+  .feedback_page .feedbacks .leave_feed .title {
+    font-size: 20px;
+  }
+  .feedbacks .leave_feed .feed_forms .feed_btn {
+    font-size: 15px;
+    padding: 10px 30px;
   }
 }
 @media (max-width: 500px) {
@@ -2972,11 +2994,32 @@ div.product {
   .page_contacts .title_aep {
     padding: 20px 0 0;
   }
+  .page_contacts .dbtn {
+    display: table;
+    margin: 0 auto;
+  }
   .error_page .error_block .txt span:nth-child(2) {
     font-size: 19px;
   }
   .page_brands .brands_box .brands_two .one_brand {
     width: 50%;
+  }
+  .feedbacks .leave_feed .feed_forms .left_form,
+  .feedbacks .leave_feed .feed_forms .right_form {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .feedbacks .leave_feed .feed_forms .left_form input {
+    margin: 0 30px 20px 0;
+    padding: 10px;
+  }
+  .feedbacks .leave_feed .feed_forms .right_form textarea {
+    padding: 10px 10px 12px 10px;
+    height: 8em;
+  }
+  .feedback_page .feedbacks .pagina {
+    padding: 50px 0;
   }
   /*.page_contacts .dbtn {
     display: block;
