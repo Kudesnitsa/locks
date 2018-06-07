@@ -1,7 +1,11 @@
 <?php
+ echo '<h1>Сторінки</h1>';
+$dirs = glob('*.html');
 
-$dirs = array_filter(glob('*'), 'is_dir');
+$homepage = file_get_contents('/');
+echo $homepage;
+
 //print_r( $dirs);
 foreach($dirs as $dir){
-  echo '<a href = "/'.$dir.'">'.$dir.'</a><br />';
+  echo '<a href = "./'.$dir.'">'.$dir.'</a><br />';
 }
