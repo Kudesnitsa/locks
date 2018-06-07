@@ -1999,7 +1999,7 @@ input, textarea {
 
 .cart_item .item_photo a img {
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 .cart_item .item_photo a {
@@ -2548,7 +2548,7 @@ div.product {
   padding: 25px 0 150px 25px;
 }
 
-.about_us_page .about_us p, span {
+.about_us_page .about_us .p, .span {
   display: inline-block;
   padding: 0 0 15px;
   line-height: 25px;
@@ -3006,6 +3006,30 @@ div.product {
     margin: 0;
   }
 
+  footer .callback span:before {
+    margin: -5px 5px;
+  }
+
+  footer .box {
+    padding: 40px 0 10px;
+  }
+
+  footer .underlogo {
+    padding: 10px 0 0 0;
+  }
+
+  footer .underlogo span:first-child a, footer .underlogo span:last-child a {
+    display: block;
+  }
+
+  footer .katalog_footer span {
+    padding: 0;
+  }
+
+  .about_us_page .about_us {
+    padding: 0 0 100px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -3117,6 +3141,10 @@ div.product {
     display: none;
   }
 
+  footer .underlogo span:last-child a {
+    display: inline-block;
+  }
+
   footer .box {
     width: 33%;
     padding: 20px 0 10px;
@@ -3143,6 +3171,10 @@ div.product {
     padding: 0;
   }
 
+  footer .underlogo span {
+    line-height: 20px;
+  }
+
   .main_slider img {
     max-height: 300px;
   }
@@ -3163,6 +3195,10 @@ div.product {
     margin: -10px 5%;
   }
 
+  .error_page {
+    height: auto;
+  }
+
   .error_page .error_block .txt {
     width: 100%;
   }
@@ -3177,7 +3213,7 @@ div.product {
 
   .error_page .error_block .txt span:nth-child(2) {
     font-size: 20px;
-    padding: 0 0 20px;
+    padding: 20px 0 20px;
   }
 
   .error_page .dbtn a {
@@ -3250,6 +3286,25 @@ div.product {
 
   .page_account .row div {
     width: 200px;
+  }
+
+  .page_account .title_page {
+    text-align: center;
+  }
+
+  .page_account .scroll {
+    overflow-x: scroll;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .page_account .table_order {
+    width: 1100px;
+  }
+
+  .page_account .show_more {
+    display: table;
+    margin: 30px auto;
   }
 
   .cart_item {
@@ -3348,6 +3403,10 @@ div.product {
     width: 100%;
   }
 
+  .page_goods .text_good {
+    margin: 30px 0 40px;;
+  }
+
   .brands .one_brand:nth-child(2n) {
     display: none;
   }
@@ -3370,6 +3429,14 @@ div.product {
 
   .katalog_footer span, .box ul li, .katalog_footer a {
     //font-size: 10px;
+  }
+
+  footer .katalog_footer span {
+    line-height: 10px;
+  }
+
+  footer .katalog_footer a {
+    font-size: 13px;
   }
 
   .katalog_footer ul .icons:after, .katalog_footer ul .icons:before, .katalog_footer ul li img {
