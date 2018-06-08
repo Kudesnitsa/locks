@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family= Open + Sans: 400,400i, 600i, 700 & amp; subset = cyrillic"
           rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="style/ion.rangeSlider.css"/>
+    <link rel="stylesheet" type="text/css" href="style/ion.rangeSlider.skinFlat.css"/>
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <title>locks</title>
 </head>
@@ -160,12 +163,11 @@
         </div>
     </nav>
 </header>
-<main class="page_contacts">
+<main class="registration_page">
     <section class="main_box">
         <div class="wrap clearfix">
             <div class="mob_but_kat hidden">
                 <span class="tab_categ">Каталог продукции</span>
-
                 <ul class="main_left_menu">
                     <li><a href="#">Доводчики</a></li>
                     <li class="have_sub_item"><a href="#">Замки в комплекте</a>
@@ -197,46 +199,58 @@
                         </ul>
                     </li>
                 </ul>
-
             </div>
-            <div class="info_cont wrap_main_box clearfix">
-                <div class="title_page">
-                    <span>Контакты</span>
-                </div>
-                <div class="a_e_p">
-                    <span class="title_aep">Адрес</span>
-                    <span>г.Черновцы<br>
-                        МТК Калиновский Рынок</span>
-
-                    <span class="title_aep">Email</span>
-                    <span>optzamki@gmail.com</span>
-
-                    <span class="title_aep">Телефон</span>
-                    <span>+38 (099) 077 23 25</span>
-                    <span class="icons">&nbsp;<img
-                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzY2NUNBQzsiIGQ9Ik0zMDcuMjA3LDBIMjA0Ljc5NEMxMDUuOTY5LDAsMjUuNTcxLDgwLjM5OCwyNS41NzEsMTc5LjIyM3Y3Ni44MSAgYzAsNjkuMzgxLDQwLjAxNCwxMzIuMzQ0LDEwMi40MTMsMTYxLjk2MXY4NS41MzdjMCw3LjQyNyw5LjI5MSwxMS4zMSwxNC41NjksNi4wMzVsNzQuMzA5LTc0LjMxaDkwLjM0NCAgYzk4LjgyNCwwLDE3OS4yMjMtODAuMzk4LDE3OS4yMjMtMTc5LjIyM3YtNzYuODFDNDg2LjQyOSw4MC4zOTgsNDA2LjAzLDAsMzA3LjIwNywweiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojNTIzNDk0OyIgZD0iTTE1My41ODcsNDE3Ljk5M2MtNjIuMzk5LTI5LjYxOC0xMDIuNDEzLTkyLjU4LTEwMi40MTMtMTYxLjk2MXYtNzYuODEgIEM1MS4xNzQsODAuMzk4LDEzMS41NzMsMCwyMzAuMzk3LDBoLTI1LjYwM0MxMDUuOTY5LDAsMjUuNTcxLDgwLjM5OCwyNS41NzEsMTc5LjIyM3Y3Ni44MWMwLDY5LjM4MSw0MC4wMTQsMTMyLjM0NCwxMDIuNDEzLDE2MS45NjEgIHY4NS41MzdjMCw3LjQyNyw5LjI5MSwxMS4zMSwxNC41NjksNi4wMzVsMTEuMDM0LTExLjAzNFY0MTcuOTkzeiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTM4NC44NSwzMTguMTAxbC03LjY3My00MS41NjZjLTAuNjM1LTMuNDM0LTMuMjk1LTYuMTM1LTYuNzE5LTYuODJsLTYwLjM0Ny0xMi4wNjkgIGMtMi44MDMtMC41NTgtNS42OTEsMC4zMTctNy43MSwyLjMzNGwtMjQuNTE3LDI0LjUxOGMtNDEuMzA4LTE4LjUwOS02NC4yMzQtNDEuNDg1LTg0LjQwNi04NC41NjZsMjQuNDM4LTI0LjQzNyAgYzIuMDE3LTIuMDE4LDIuODkzLTQuOTEyLDIuMzM0LTcuNzFsLTEyLjA2OS02MC4zNDhjLTAuNjg1LTMuNDIzLTMuMzg2LTYuMDg1LTYuODItNi43MTlsLTQxLjU2Ni03LjY3MiAgYy0xLjEzOC0wLjIwOS0yLjMxLTAuMTg3LTMuNDQsMC4wN2MtMTAuOTc1LDIuNDkzLTIwLjk4OSw4LjAyMy0yOC45NiwxNS45OTZjLTEzLjgwMiwxMy44MDItMTkuMDc3LDMzLjk0Mi0xNS4yNTMsNTguMjQzICBjNi40MTksNDAuODA2LDI2LjQxMSw5Ny41OTQsNjMuMjk2LDEzNC42MjdsMC41MDQsMC41YzM3LjAwNCwzNi44NTksOTMuNzkzLDU2Ljg1MywxMzQuNjAxLDYzLjI3MyAgYzUuMTQxLDAuODEsMTAuMDkyLDEuMjExLDE0Ljg0LDEuMjExYzE3LjY5NSwwLDMyLjUyLTUuNTgyLDQzLjQwNS0xNi40NjVjNy45NzEtNy45NzIsMTMuNTAzLTE3Ljk4NiwxNS45OTUtMjguOTU5ICBDMzg1LjAzNiwzMjAuNDExLDM4NS4wNiwzMTkuMjQxLDM4NC44NSwzMTguMTAxeiIvPgo8Zz4KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiNFNUU1RTU7IiBwb2ludHM9IjIwOS41NzEsMTgzLjgzOSAyMTcuOTE1LDE3NS40OTQgMjE3LjkyNCwxNzUuNDg1IDIwOS41NywxODMuODM4ICAiLz4KCQoJCTxyZWN0IHg9IjI5Mi4yMzUiIHk9IjI2NC4xODMiIHRyYW5zZm9ybT0ibWF0cml4KDAuNzA3MSAtMC43MDcxIDAuNzA3MSAwLjcwNzEgLTk5LjQ2NzUgMjg4LjIzMjIpIiBzdHlsZT0iZmlsbDojRTVFNUU1OyIgd2lkdGg9IjExLjkxNiIgaGVpZ2h0PSIwLjAwMiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0U1RTVFNTsiIGQ9Ik0zNDEuNDczLDM1MC44NzFjLTQuNzQ4LDAtOS42OTktMC40MDEtMTQuODQtMS4yMTFjLTQwLjgwNy02LjQyLTk3LjU5Ni0yNi40MTQtMTM0LjYwMS02My4yNzMgICBsLTAuNTA0LTAuNWMtMzYuODg1LTM3LjAzMy01Ni44NzctOTMuODIxLTYzLjI5Ni0xMzQuNjI3Yy0zLjA4OS0xOS42MzMtMC4yMzMtMzYuNTQ4LDguMjU2LTQ5LjYwMSAgIGMtMy4yNTEsMi4xNjktNi4zMDIsNC42NTctOS4wOTcsNy40NTJjLTEzLjgwMiwxMy44MDItMTkuMDc3LDMzLjk0Mi0xNS4yNTMsNTguMjQzYzYuNDE5LDQwLjgwNiwyNi40MTEsOTcuNTk0LDYzLjI5NiwxMzQuNjI3ICAgbDAuNTA0LDAuNWMzNy4wMDQsMzYuODU5LDkzLjc5Myw1Ni44NTMsMTM0LjYwMSw2My4yNzNjNS4xNDEsMC44MSwxMC4wOTIsMS4yMTEsMTQuODQsMS4yMTFjMTcuNjk1LDAsMzIuNTItNS41ODEsNDMuNDA1LTE2LjQ2NSAgIGMyLjc5NC0yLjc5NSw1LjI4Mi01Ljg0NSw3LjQ1MS05LjA5NkMzNjYuNTk4LDM0Ny42NzIsMzU0Ljg1OCwzNTAuODcxLDM0MS40NzMsMzUwLjg3MXoiLz4KPC9nPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMjczLjA2OSwxNDUuMDg1Yy00LjcxMywwLTguNTM0LDMuODIxLTguNTM0LDguNTM0czMuODIxLDguNTM0LDguNTM0LDguNTM0ICAgYzE4LjgyNCwwLDM0LjEzOCwxNS4zMTQsMzQuMTM4LDM0LjEzOGMwLDQuNjUsMy44ODQsOC41MzQsOC41MzQsOC41MzRzOC41MzQtMy44ODQsOC41MzQtOC41MzQgICBDMzI0LjI3NiwxNjguMDU1LDMwMS4zMDUsMTQ1LjA4NSwyNzMuMDY5LDE0NS4wODV6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTI3My4wNjksMTEwLjk0N2MtMy4xNTcsMC02LjM0MywwLjE3NS05LjQ3MSwwLjUyYy00LjY4NSwwLjUxNy04LjA2NCw0LjczNC03LjU0Nyw5LjQyICAgczQuNzQzLDguMDU2LDkuNDIsNy41NDdjMi41MDgtMC4yNzcsNS4wNjQtMC40MTgsNy41OTgtMC40MThjMzcuNjQ3LDAsNjguMjc1LDMwLjYyOCw2OC4yNzUsNjguMjc1ICAgYzAsMi41MzUtMC4xNDEsNS4wOTEtMC40MTgsNy41OTljLTAuNTEsNC42MjEsMi45MjQsOC45MTEsNy41NDcsOS40MmM0LjYyMiwwLjUwOSw4LjkwOS0yLjkyNCw5LjQyLTcuNTQ3ICAgYzAuMzQ1LTMuMTI4LDAuNTItNi4zMTQsMC41Mi05LjQ3MkMzNTguNDEzLDE0OS4yMzMsMzIwLjEyOCwxMTAuOTQ3LDI3My4wNjksMTEwLjk0N3oiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMjczLjA2OSw3Ni44MWMtMy4wNSwwLTYuMTM5LDAuMTE2LTkuMTc5LDAuMzQ3Yy00LjcsMC4zNTYtOC4yMjIsNC40NTYtNy44NjYsOS4xNTUgICBjMC4zNTUsNC43LDQuNDY5LDguMjIyLDkuMTU1LDcuODY2YzIuNjEzLTAuMTk5LDUuMjY4LTAuMjk5LDcuODktMC4yOTljNTYuNDcxLDAsMTAyLjQxMyw0NS45NDIsMTAyLjQxMywxMDIuNDEzICAgYzAsNy45OS0wLjkyMiwxNS45NDQtMi43NCwyMy42NGMtMS4wNDMsNC40MSwxLjY3Myw4Ljk5NCw2LjA0NiwxMC4xOTJjNC42MDEsMS4yNiw5LjQ2OS0xLjYyNSwxMC41NjUtNi4yNjYgICBjMi4xMjItOC45ODEsMy4xOTgtMTguMjU1LDMuMTk4LTI3LjU2NkMzOTIuNTUxLDEzMC40MDksMzM4Ljk1Miw3Ni44MSwyNzMuMDY5LDc2LjgxeiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="/>
-                    </span>
-                    <br><span>+38 (067) 077 23 25</span>
-                </div>
-                <div class="write_us">
-                    <span>Просьбы, пожелания и любые вопросы Вы можете отправить нам, заполнив данную форму</span>
-                    <form method="post">
-                        <input type="text" placeholder="Имя" id="cont_name" name="name"
-                               class="required" aria-required="true" required="required">
-                        <input type="text" placeholder="Номер телефона" id="cont_phone" name="phone"
-                               class="required " aria-required="true" required="required">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение" id="cont_sms"
-                                  class="required" aria-required="true" required="required"></textarea>
-                    <button class="dbtn main_dbtn">Отправить</button>
+            <div class="registration wrap_main_box clearfix">
+                <div class="profile_form">
+                    <div class="header_one">Регистрация</div>
+                    <form method="post" id="adminForm" name="userForm" action="/user" class="form-validate">
+                        <div class="adminForm user-details ">
+                            <div title="Your name*">
+                                <div class="key"></div>
+                                <div>
+                                    <div class="error_name_field varError"></div>
+                                    <input placeholder="Ф.И.О." type="text" id="name_field" name="name" size="30"
+                                           class="required" maxlength="25" aria-required="true" required="required"></div>
+                            </div>
+                            <div title="Your email*">
+                                <div class="key"></div>
+                                <div>
+                                    <div class="error_email_field varError"></div>
+                                    <input placeholder="Е-mail" type="text" id="email_field" name="email" size="30"
+                                           class="required" maxlength="100"
+                                           aria-required="true" required="required">
+                                </div>
+                            </div>
+                            <div title="Your password*">
+                                <div class="key"></div>
+                                <div>
+                                    <div class="error_password_field varError"></div>
+                                    <input placeholder="Пароль" type="password" id="password_field" name="password" size="30"
+                                           class="required " maxlength="100"
+                                           aria-required="true" required="required">
+                                </div>
+                            </div>
+                            <div title="Password repeat*">
+                                <div class="key"></div>
+                                <div>
+                                    <div class="error_pass_repeat_field varError"></div>
+                                    <input placeholder="Повторить пароль" type="password" id="repeat_pass_field" name="repeat_pass" size="30"
+                                           class="required " maxlength="100"
+                                           aria-required="true" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_wrap">
+                            <button class="button in_stock_btn validate dbtn main_dbtn"
+                                    type="submit">Зарегистрироваться
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2653.6151877538755!2d25.95732131535018!3d48.31025197923759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734086517aabd81%3A0xeb0d255dfd147f3b!2z0JrQsNC70LjQvdGW0LLRgdGM0LrQuNC5INGA0LjQvdC-0Lo!5e0!3m2!1suk!2sua!4v1526990867909"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section>
+
 </main>
 <footer>
     <div class="wrap">
@@ -254,7 +268,7 @@
                     <li><a href="/errorPage.html">Оплата и доставка</a></li>
                     <li><a href="/reviews.html">Отзывы</a></li>
                     <li><a href="/newBlock.html">Новости</a></li>
-                    <li><a href="/locks/contacts.html">Контакты</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
                 </ul>
             </div>
             <div class="box katalog_footer spec">
@@ -287,8 +301,9 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
         </div>
     </div>
 </footer>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
