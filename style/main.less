@@ -668,8 +668,12 @@ a, button {
   background: white;
   box-shadow: 0 0 10px #999999;
   top: 0;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
+}
+
+.sub_menu li {
+  padding: 10px;
 }
 
 .sub_menu a {
@@ -1479,7 +1483,7 @@ footer {
 
 .page_categories .filter .item {
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 10px 10px;
   border: 2px solid @colorBorder;
   border-radius: 50px;
   display: inline-block;
@@ -1983,10 +1987,6 @@ input, textarea {
   margin: 0;
 }
 
-.page_card .card .before_t {
-  color: #ea3a2d;
-}
-
 #removeproduct {
   display: table-cell;
   vertical-align: middle;
@@ -2012,6 +2012,31 @@ input, textarea {
   color: #6f6f6f;
   font-size: 15px;
 }
+/*****/
+.place_holder {
+  z-index: 100;
+  cursor: text;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 100%;
+  display: none;
+  color: #6f6f6f;
+}
+
+.placeinput input:invalid + .place_holder {
+  display: inline;
+}
+
+.placeinput {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.place_holder span {
+  color: #ea3a2d;
+}
+/*****/
 
 .cart_item .item_photo a img {
   display: block;

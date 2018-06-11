@@ -203,7 +203,6 @@
 
             </div>
             <div class="card wrap_main_box clearfix">
-                <span class="before_t">Минимальная сумма для осуществления покупки - от 1000 грн.</span>
                 <form method="post" id="checkoutForm" name="checkoutForm" class="opg-form opg-width-1-1 ">
                     <h1 class="title_page">Корзина</h1>
                     <div id="cart-contents" class="main-wrapper" data-opg-margin="">
@@ -335,29 +334,34 @@
                                                     <div class="adminform " id="user_fields_div" style="">
                                                         <div class="opg-width-1-1">
                                                             <div class="error_txt"></div>
-                                                            <input class="cart_inpt" placeholder="Ф.И.О."
-                                                                   type="text" id="name_field" name="name"
-                                                                   maxlength="25">
+                                                            <label class="placeinput">
+                                                                <input class="cart_inpt" required="required" type="text" id="name_field" name="name"
+                                                                       maxlength="25" />
+                                                                <div class="place_holder">Ф.И.О. <span> *</span></div>
+                                                            </label>
                                                         </div>
                                                     </div>
+
                                                     <div class="opg-width-1-1 form_field">
                                                         <div class="error_txt"></div>
                                                         <div id="email_error" class="opg-width-1-1 style=">
                                                         </div>
                                                         <input data-description=""
                                                                class="cart_inpt"
-                                                               placeholder="Email" type="text"
+                                                               placeholder="E-mail" type="text"
                                                                id="email_field" name="email" maxlength="100">
                                                     </div>
 
                                                     <div class="opg-width-1-1 form_field">
                                                         <div class="error_txt"></div>
                                                         <!-- <div class="field_desc" id=""-->
-                                                        <input data-description="" class="cart_inpt"
-                                                               placeholder="Номер телефона" type="text"
-                                                               id="phone_1_field"
-                                                               name="phone_1"
-                                                               maxlength="32">
+                                                        <label class="placeinput">
+                                                            <input data-description="" class="cart_inpt" required="required" type="text" id="phone_1_field"
+                                                                   name="phone_1"
+                                                                   maxlength="32"/>
+                                                            <div class="place_holder">Телефон <span> *</span></div>
+                                                        </label>
+
                                                     </div>
 
                                                     <div class="opg-width-1-1 form_field">
@@ -375,7 +379,7 @@
                                                         <select name="fancySelect"
                                                                 data-description="Your delivery method" id="idCat"
                                                                 class="select_inpt required">
-                                                            <option value="shipment_id_16">Без способа доставки
+                                                            <option value="shipment_id_16">Без способа доставки *
                                                             </option>
                                                             <option value="shipment_id_17">Новая Почта
                                                             </option>
@@ -387,7 +391,7 @@
                                                         <select data-description="Your payment method"
                                                                 class="select_inpt">
                                                             <option value="payment_id_13">
-                                                                Без способа оплаты
+                                                                Без способа оплаты *
                                                             </option>
                                                             <option value="payment_id_14">
                                                                 Безналичный
